@@ -14,7 +14,7 @@ export const Head1 = styled.h1`
   text-transform: uppercase;
   margin: 10px 0 20px 0;
 `;
-export const PageHead2 = styled.h1``;
+export const PageHead1 = styled.h1``;
 
 export const H4 = styled.h4``;
 

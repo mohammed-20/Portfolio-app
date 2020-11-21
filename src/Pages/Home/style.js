@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   background-image: url(${Slider});
-  background-position: -72px -65px;
+  background-position: center;
   background-attachment: fixed;
   background-size: cover;
   position: absolute;
@@ -31,7 +31,7 @@ export const Content = styled.div`
   color: #fff;
   margin: 0 0 0 23.7em;
   width: 35.5em;
-  height: 19.5em;
+  height: 14em;
   z-index: 1;
 `;
 
@@ -56,7 +56,7 @@ export const TextLogo = styled.h2`
   height: 96px;
   width: 230px;
   color: #fff;
-  background-color: rgba(250, 183, 0, 0.1);
+  background-color: rgba(250, 183, 0, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
