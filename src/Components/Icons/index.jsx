@@ -42,7 +42,6 @@ export const UpWork = () => {
 export const Fiverr = () => {
   return (
     <S.Icon>
-      {/* <S.ImgIcon src={FiverrIcon} alt="FiverrIcon" /> */}
       <FontAwesomeIcon icon={faGithub} size="2x" />
     </S.Icon>
   );
