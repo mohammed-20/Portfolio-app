@@ -20,7 +20,7 @@ export const Logo = styled.img`
   margin-top: 1.25em;
 `;
 export const NavBar = styled.ul`
-  margin-top: 1.5em;
+  margin-top: 0.1em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,13 +29,13 @@ export const NavItme = styled(Link)`
   text-decoration: none;
   color: #000;
   list-style: none;
-  padding: 0.4em 2.2em;
-  font-size: 25px;
-  margin-top: 0.4em;
+  padding: 0.5em 1.9em;
+  font-size: 23px;
+  margin-top: 0.5em;
   line-height: 1.3;
   &:hover {
     color: #fff;
     background-color: #000;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 `;
