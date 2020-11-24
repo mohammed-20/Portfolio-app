@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Slider from "../../images/slider-1.jpg";
+
 export const Wrapper = styled.div`
   width: 100%;
   height: 100vh;
@@ -28,11 +29,11 @@ export const Content = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #fff;
-  margin: 0 0 0 23.7em;
-  width: 35.5em;
+  color: ${(props) => props.theme.white};
+  width: 36.5em;
   height: 14em;
   z-index: 1;
+  margin-left: 23.7em;
 `;
 
 export const Line = styled.div`
@@ -55,8 +56,8 @@ export const TextLogo = styled.h2`
   z-index: 10;
   height: 96px;
   width: 230px;
-  color: #fff;
-  background-color: rgba(250, 183, 0, 0.2);
+  color: ${(props) => props.theme.white};
+  background-color: ${(props) => props.theme.backgroundLogo};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,7 +74,7 @@ export const TextLogo = styled.h2`
     height: 40px;
     transform: rotate(45deg);
     z-index: 0;
-    background-color: #fab700;
+    background-color: ${(props) => props.theme.primary};
     margin-right: -4px;
   }
 `;
