@@ -4,7 +4,7 @@ export const Wrapper = styled.nav`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fab700;
+  background-color: ${(props) => props.theme.primary};
   position: fixed;
   right: 0px;
   top: 0;
@@ -27,9 +27,9 @@ export const NavBar = styled.ul`
 `;
 export const NavItme = styled(Link)`
   text-decoration: none;
-  color: #000;
+  color: ${(props) => props.theme.fontColor};
   list-style: none;
-  padding: 0.5em 1.9em;
+  padding: 0.5em 2em;
   font-size: 23px;
   margin-top: 0.5em;
   line-height: 1.3;
