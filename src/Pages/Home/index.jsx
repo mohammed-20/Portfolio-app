@@ -6,7 +6,8 @@ import ColorPicker from "../../Components/ColorPicker";
 import * as S from "./style";
 import * as T from "../../Components/Typography";
 import * as I from "../../Components/Icons";
-export default function Home() {
+export default function Home(props) {
+  const { onClick } = props;
   return (
     <S.Wrapper>
       <S.Overlay>
