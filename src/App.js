@@ -20,7 +20,7 @@ import {
 } from "./Theme";
 import { ThemeProvider } from "styled-components";
 import Home from "./Pages/Home";
-// import AboutUs from "./Pages/AboutUs";
+import AboutUs from "./Pages/AboutUs";
 import "./App.css";
 function App() {
   const [theme, setTheme] = useState("");
@@ -91,9 +91,9 @@ function App() {
             <Route exact path="/">
               <Home onClick={handleClick} />
             </Route>
-            {/* <Route exact path="/About">
+            <Route exact path="/About">
               <AboutUs onClick={handleClick} />
-            </Route> */}
+            </Route>
             {/*
           <Route exact path="/Resume">
             Resume
