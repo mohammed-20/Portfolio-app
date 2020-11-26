@@ -6,7 +6,7 @@ import {
   faLinkedinIn,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import Upwork from "../../images/Icons/Upwork.svg";
+import Upwork from "./UpWork";
 
 import * as S from "./style";
 export const Facebook = () => {
@@ -34,7 +34,7 @@ export const LinkedIn = () => {
 export const UpWork = () => {
   return (
     <S.Icon>
-      <S.ImgIcon src={Upwork} alt="UpWork" />
+      <Upwork />
     </S.Icon>
   );
 };
