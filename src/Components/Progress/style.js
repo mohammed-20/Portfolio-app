@@ -1,6 +1,5 @@
 import styled from "styled-components";
 export const ProgressContainer = styled.div`
-  margin-top: 1em;
   display: flex;
 `;
 export const DivProgres = styled.div`
