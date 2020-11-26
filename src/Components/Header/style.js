@@ -14,11 +14,7 @@ export const Wrapper = styled.nav`
   overflow: hidden;
   transition: 0.3s;
 `;
-export const Logo = styled.img`
-  height: 55px;
-  width: 55px;
-  margin-top: 1.25em;
-`;
+
 export const NavBar = styled.ul`
   margin-top: 0.1em;
   display: flex;
@@ -38,4 +34,10 @@ export const NavItme = styled(Link)`
     background-color: #000;
     transition: all 0.2s ease-in-out;
   }
+  /* &[title]:hover:after {
+    content: attr(title);
+    right: 6em;
+    background-color: #000000;
+    position: absolute;
+  } */
 `;
