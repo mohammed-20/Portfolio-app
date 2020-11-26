@@ -18,7 +18,7 @@ export const ColorBtn = styled.div`
   height: 50px;
   font-size: 1.95rem;
   align-items: center;
-  color: ${(props) => props.theme.blackGray};
+  color: ${(props) => props.theme.fontColor};
   display: flex;
   border-radius: 0 10px 10px 0;
   cursor: pointer;
@@ -26,7 +26,7 @@ export const ColorBtn = styled.div`
   box-shadow: 3px 1px 5px 0 rgba(0, 0, 0, 0.6);
 `;
 export const ColorLabel = styled.div`
-  padding: 15px 15px 0px 20px;
+  padding: 15px 15px 0px 15px;
   margin-top: 0.8em;
 
   display: block;
@@ -35,14 +35,14 @@ export const ColorLabel = styled.div`
   box-shadow: -2px 1px 5px 1px rgba(0, 0, 0, 0.4);
   border-radius: 0 20px 20px 0;
   z-index: 2;
-  width: 15em;
+  width: 14.5em;
   transition-property: padding, height;
   transition: 0.3s;
   overflow: hidden;
   ${(props) =>
     props.toggleC
       ? "height:288px;"
-      : "height:0; padding: 0 15px 0 20px; box-shadow:none;"};
+      : "height:0; padding: 0 15px 0 15px; box-shadow:none;"};
 `;
 export const LightVersion = styled.div``;
 export const LightVersionColor = styled.div`

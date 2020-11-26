@@ -7,6 +7,11 @@ export const yellow = {
   fontColor: `#000000`,
   blackGray: `#212529`,
   white: `#ffffff`,
+  headSpancolor: `rgba(204, 204, 204, 0.7)`,
+  titlespancolor: ` #212529`,
+  colorparagraph: `#555555`,
+  backgroundhover: `#e4c200`,
+  backgroundprogress: `#cccccc`,
 };
 export const red = {
   primary: `#fa5151`,
@@ -16,6 +21,11 @@ export const red = {
   backgroundLogo: ` rgba(250, 81, 81, 0.1)`,
   blackGray: `#212529`,
   white: `#ffffff`,
+  headSpancolor: `rgba(204, 204, 204, 0.7)`,
+  titlespancolor: ` #212529`,
+  colorparagraph: `#555555`,
+  backgroundhover: `#ff6262`,
+  backgroundprogress: `#cccccc`,
 };
 export const blue = {
   primary: `#5d83ff`,
@@ -25,6 +35,11 @@ export const blue = {
   backgroundLogo: `rgba(93, 131, 255, 0.1)`,
   blackGray: `#212529`,
   white: `#ffffff`,
+  headSpancolor: `rgba(204, 204, 204, 0.7)`,
+  titlespancolor: ` #212529`,
+  colorparagraph: `#555555`,
+  backgroundhover: `#7494ff`,
+  backgroundprogress: `#cccccc`,
 };
 export const green = {
   primary: `#5de60e`,
@@ -34,6 +49,11 @@ export const green = {
   backgroundLogo: `rgba(93, 230, 14, 0.1)`,
   blackGray: `#212529`,
   white: `#ffffff`,
+  headSpancolor: `rgba(204, 204, 204, 0.7)`,
+  titlespancolor: ` #212529`,
+  colorparagraph: `#555555`,
+  backgroundhover: `#6cd430`,
+  backgroundprogress: `#cccccc`,
 };
 export const mayablue = {
   primary: `#52A3CC`,
@@ -43,6 +63,11 @@ export const mayablue = {
   backgroundLogo: ` rgba(82, 163, 204, 0.1)`,
   blackGray: `#212529`,
   white: `#ffffff`,
+  headSpancolor: `rgba(204, 204, 204, 0.7)`,
+  titlespancolor: ` #212529`,
+  colorparagraph: `#555555`,
+  backgroundhover: `#64c8fa`,
+  backgroundprogress: `#cccccc`,
 };
 export const roman = {
   primary: `#E68585`,
@@ -52,6 +77,11 @@ export const roman = {
   backgroundLogo: `rgba(230, 133, 133, 0.1)`,
   blackGray: `#212529`,
   white: `#ffffff`,
+  headSpancolor: `rgba(204, 204, 204, 0.7)`,
+  titlespancolor: ` #212529`,
+  colorparagraph: `#555555`,
+  backgroundhover: `#EB9D9D`,
+  backgroundprogress: `#cccccc`,
 };
 export const springgreen = {
   primary: `#0ad670`,
@@ -61,6 +91,11 @@ export const springgreen = {
   backgroundLogo: `rgba(10, 214, 112, 0.1)`,
   blackGray: `#212529`,
   white: `#ffffff`,
+  headSpancolor: `rgba(204, 204, 204, 0.7)`,
+  titlespancolor: ` #212529`,
+  colorparagraph: `#555555`,
+  backgroundhover: `#33FF99`,
+  backgroundprogress: `#cccccc`,
 };
 export const violent = {
   primary: `#f134e8`,
@@ -70,6 +105,11 @@ export const violent = {
   backgroundLogo: `rgba(241, 52, 232, 0.1)`,
   blackGray: `#212529`,
   white: `#ffffff`,
+  headSpancolor: `rgba(204, 204, 204, 0.7)`,
+  titlespancolor: ` #212529`,
+  colorparagraph: `#555555`,
+  backgroundhover: `#e050d9`,
+  backgroundprogress: `#cccccc`,
 };
 
 //Dark Mode Color
@@ -81,6 +121,11 @@ export const darkBlue = {
   backgroundLogo: ` #1414b31a`,
   blackGray: `#212529`,
   white: `#ffffff`,
+  headSpancolor: `rgba(51, 51, 51, 0.7)`,
+  titlespancolor: ` #d5d9dd`,
+  colorparagraph: `#a9a9a9`,
+  backgroundhover: `#121297`,
+  backgroundprogress: `#333333`,
 };
 export const darkCyan = {
   primary: `#087a7a`,
@@ -90,15 +135,25 @@ export const darkCyan = {
   backgroundLogo: ` #087a7a1a`,
   blackGray: `#212529`,
   white: `#ffffff`,
+  headSpancolor: `rgba(51, 51, 51, 0.7)`,
+  titlespancolor: ` #d5d9dd`,
+  colorparagraph: `#a9a9a9`,
+  backgroundhover: `#065e5e`,
+  backgroundprogress: `#333333`,
 };
 export const darkGreen = {
   primary: `#015c3b`,
   fontColor: `#ffffff`,
-  backgroundPages: `#dbcbcb`,
+  backgroundPages: `#1E1E1E`,
   backgroundLabel: `#000000`,
   backgroundLogo: ` #054d321a`,
   blackGray: `#212529`,
   white: `#ffffff`,
+  headSpancolor: `rgba(51, 51, 51, 0.7)`,
+  titlespancolor: ` #d5d9dd`,
+  colorparagraph: `#a9a9a9`,
+  backgroundhover: `#093f2b`,
+  backgroundprogress: `#333333`,
 };
 export const darkIndig = {
   primary: `#5c456b`,
@@ -108,6 +163,11 @@ export const darkIndig = {
   backgroundLogo: ` #5c456b1a`,
   blackGray: `#212529`,
   white: `#ffffff`,
+  headSpancolor: `rgba(51, 51, 51, 0.7)`,
+  titlespancolor: ` #d5d9dd`,
+  colorparagraph: `#a9a9a9`,
+  backgroundhover: `#493158`,
+  backgroundprogress: `#333333`,
 };
 export const darkOrang = {
   primary: `#c06a01`,
@@ -117,6 +177,11 @@ export const darkOrang = {
   backgroundLogo: ` #c06a011a`,
   blackGray: `#212529`,
   white: `#ffffff`,
+  headSpancolor: `rgba(51, 51, 51, 0.7)`,
+  titlespancolor: ` #d5d9dd`,
+  colorparagraph: `#a9a9a9`,
+  backgroundhover: `#a75d02`,
+  backgroundprogress: `#333333`,
 };
 export const darkPink = {
   primary: `#db376e`,
@@ -126,6 +191,11 @@ export const darkPink = {
   backgroundLogo: ` #db376e1a`,
   blackGray: `#212529`,
   white: `#ffffff`,
+  headSpancolor: `rgba(51, 51, 51, 0.7)`,
+  titlespancolor: ` #d5d9dd`,
+  colorparagraph: `#a9a9a9`,
+  backgroundhover: `#f73777`,
+  backgroundprogress: `#333333`,
 };
 export const darkPurpal = {
   primary: `#8A2BE2`,
@@ -135,6 +205,11 @@ export const darkPurpal = {
   backgroundLogo: ` #8A2BE21a`,
   blackGray: `#212529`,
   white: `#ffffff`,
+  headSpancolor: `rgba(51, 51, 51, 0.7)`,
+  titlespancolor: ` #d5d9dd`,
+  colorparagraph: `#a9a9a9`,
+  backgroundhover: `#9d4ce9`,
+  backgroundprogress: `#333333`,
 };
 
 export const darkRed = {
@@ -145,4 +220,9 @@ export const darkRed = {
   backgroundLogo: ` #d300001a`,
   blackGray: `#212529`,
   white: `#ffffff`,
+  headSpancolor: `rgba(51, 51, 51, 0.7)`,
+  titlespancolor: ` #d5d9dd`,
+  colorparagraph: `#a9a9a9`,
+  backgroundhover: `#b10000`,
+  backgroundprogress: `#333333`,
 };
