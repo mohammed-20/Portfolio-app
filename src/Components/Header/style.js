@@ -32,7 +32,6 @@ export const NavItme = styled(Link)`
   &:hover {
     color: #fff;
     background-color: #000;
-    transition: all 0.2s ease-in-out;
   }
   /* &[title]:hover:after {
     content: attr(title);
