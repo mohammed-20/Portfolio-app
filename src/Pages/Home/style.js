@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Slider from "../../images/slider-1.jpg";
+import BgHome from "../../images/slider-1.jpg";
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-image: url(${Slider});
+  background-image: url(${BgHome});
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -33,7 +33,7 @@ export const Content = styled.div`
   width: 36.5em;
   height: 14em;
   z-index: 1;
-  margin-left: 23.7em;
+  margin: auto;
 `;
 
 export const Line = styled.div`
@@ -47,34 +47,4 @@ export const Line = styled.div`
 export const IconGroup = styled.div`
   display: flex;
   justify-content: center;
-`;
-
-export const TextLogo = styled.h2`
-  position: absolute;
-  right: 50px;
-  top: -5px;
-  z-index: 10;
-  height: 96px;
-  width: 230px;
-  color: ${(props) => props.theme.white};
-  background-color: ${(props) => props.theme.backgroundLogo};
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 900;
-  font-size: 2.2rem;
-  line-height: 1.2;
-
-  &::after {
-    content: "";
-    position: absolute;
-    right: 0px;
-    top: 32px;
-    width: 40px;
-    height: 40px;
-    transform: rotate(45deg);
-    z-index: 0;
-    background-color: ${(props) => props.theme.primary};
-    margin-right: -4px;
-  }
 `;

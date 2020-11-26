@@ -6,13 +6,13 @@ import ColorPicker from "../../Components/ColorPicker";
 import * as S from "./style";
 import * as T from "../../Components/Typography";
 import * as I from "../../Components/Icons";
-export default function Home() {
+export default function Home({ onClick }) {
   return (
     <S.Wrapper>
       <S.Overlay>
         <ParticlesShap />
-        <S.TextLogo>Cortex</S.TextLogo>
-        <ColorPicker />
+        <T.H2>M7.N3im</T.H2>
+        <ColorPicker onClick={onClick} />
         <S.Content>
           <T.H1>welcome</T.H1>
           <T.Head1> I AM Mohammed</T.Head1>
