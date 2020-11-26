@@ -13,9 +13,17 @@ export const PageHead1 = (props) => {
   return <S.PageHead1>{children}</S.PageHead1>;
 };
 
+export const H2 = (props) => {
+  const { children } = props;
+  return <S.H2>{children}</S.H2>;
+};
 export const H4 = (props) => {
   const { children } = props;
   return <S.H4>{children}</S.H4>;
+};
+export const Head4 = (props) => {
+  const { children } = props;
+  return <S.Head4>{children}</S.Head4>;
 };
 
 export const H6 = (props) => {
@@ -26,4 +34,8 @@ export const H6 = (props) => {
 export const P = (props) => {
   const { children } = props;
   return <S.P>{children}</S.P>;
+};
+export const ParaPage = (props) => {
+  const { children } = props;
+  return <S.ParaPage>{children}</S.ParaPage>;
 };
