@@ -19,14 +19,15 @@ const Wrapper = styled.section`
 
   display: block;
   position: relative;
-  width: 79em;
+  width: 85em;
   height: 60vh;
+  z-index: 2;
 `;
 const Overlay = styled.div`
   background-color: rgb(0, 0, 0, 0.7);
   position: absolute;
   height: 60vh;
-  width: 79em;
+  width: 85em;
   z-index: 1;
   display: flex;
   align-items: center;
