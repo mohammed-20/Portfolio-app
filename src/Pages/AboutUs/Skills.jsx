@@ -1,13 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-
 import Progress from "../../Components/Progress";
-// import DashLine from "../../Components/DashLine";
-
-import PageTitle from "../../Components/PageTitle";
+import DashLine from "../../Components/DashLine";
+// import PageTitle from "../../Components/PageTitle";
+import { Subtitle, PageHead1 } from "../../Components/Typography";
 const Wrapper = styled.section`
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 82px;
   display: flex;
 `;
 const Content = styled.div`
@@ -21,44 +20,68 @@ const Content = styled.div`
   justify-content: center;
   margin-top: 2.5em;
 `;
-const P = styled.p`
-  line-height: 2;
-  font-size: 1rem;
-  width: 47em;
-  margin-bottom: 20px;
-  margin-right: 2em;
-  font-weight: 400;
-  text-align: center;
-  color: ${(props) => props.theme.colorparagraph};
+const ContenrProgress = styled.div`
+  margin-top: 2em;
+  margin-left: 2em;
 `;
+const TitlePage = styled.div`
+  margin-bottom: 30px;
+  position: relative;
+  margin-top: -30px;
+  color: ${(props) => props.theme.titlespancolor};
+  display: flex;
+  justify-content: center;
+`;
+const TitleSpan = styled.span`
+  border-bottom: 3px dashed;
+  padding-bottom: 10px;
+  color: ${(props) => props.theme.primary};
 
+  left: -11px;
+  position: relative;
+`;
+const HeadSpan = styled.span`
+  position: absolute;
+  left: 84px;
+  top: -34px;
+  font-weight: 700;
+  font-size: 80px;
+  z-index: -1;
+  color: ${(props) => props.theme.headSpancolor};
+`;
 export default function Skills() {
   return (
     <Wrapper>
-      {/* <DashLine /> */}
       <Content>
-        <PageTitle spanhead="My" spantext="My">
-          Skills
-        </PageTitle>
-        <P>
+        <DashLine />
+        <TitlePage>
+          <HeadSpan>My</HeadSpan>
+          <PageHead1>
+            <TitleSpan>My</TitleSpan>
+            Skills
+          </PageHead1>
+        </TitlePage>
+        <Subtitle>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur
           ratione quod.
-        </P>
-        <Progress style={{ width: "95%" }} TextLabel="95%">
-          Html
-        </Progress>
-        <Progress style={{ width: "90%" }} TextLabel="90%">
-          CSS
-        </Progress>
-        <Progress style={{ width: "75%" }} TextLabel="75%">
-          WordPress
-        </Progress>
-        <Progress style={{ width: "80%" }} TextLabel="80%">
-          JAVASCRIPT
-        </Progress>
-        <Progress style={{ width: "85%" }} TextLabel="85%">
-          REACT.JS
-        </Progress>
+        </Subtitle>
+        <ContenrProgress>
+          <Progress style={{ width: "95%" }} TextLabel="95%">
+            Html
+          </Progress>
+          <Progress style={{ width: "90%" }} TextLabel="90%">
+            CSS
+          </Progress>
+          <Progress style={{ width: "75%" }} TextLabel="75%">
+            WordPress
+          </Progress>
+          <Progress style={{ width: "80%" }} TextLabel="80%">
+            JAVASCRIPT
+          </Progress>
+          <Progress style={{ width: "85%" }} TextLabel="85%">
+            REACT.JS
+          </Progress>
+        </ContenrProgress>
       </Content>
     </Wrapper>
   );

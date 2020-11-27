@@ -33,10 +33,4 @@ export const NavItme = styled(Link)`
     color: #fff;
     background-color: #000;
   }
-  /* &[title]:hover:after {
-    content: attr(title);
-    right: 6em;
-    background-color: #000000;
-    position: absolute;
-  } */
 `;

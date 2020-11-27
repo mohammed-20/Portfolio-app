@@ -7,7 +7,6 @@ import * as S from "./style";
 import Button from "../../Components/Button";
 import InfoSection from "./InfoSection";
 import Skills from "./Skills";
-import PageTitle from "../../Components/PageTitle";
 
 export default function AboutUs(props) {
   const { onClick } = props;
@@ -20,9 +19,13 @@ export default function AboutUs(props) {
             <S.AboutImg src={AboutImg} alt="AboutImg" />
           </S.DivImg>
           <S.Describtion>
-            <PageTitle spanhead="Me" spantext="About">
-              Me
-            </PageTitle>
+            <S.TitlePage>
+              <S.HeadSpan>Me</S.HeadSpan>
+              <T.PageHead1>
+                <S.TitleSpan>About</S.TitleSpan>
+                Me
+              </T.PageHead1>
+            </S.TitlePage>
 
             <T.H4>I am Mohammed, Web Designer &amp; Web Developer </T.H4>
             <T.ParaPage>

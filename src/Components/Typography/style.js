@@ -33,9 +33,10 @@ export const Head1 = styled.h1`
   animation-delay: 1s;
 `;
 export const PageHead1 = styled.h1`
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   font-weight: 700;
   line-height: 1.2;
+  letter-spacing: 1px;
 `;
 export const H2 = styled.h2`
   position: absolute;
@@ -106,5 +107,15 @@ export const ParaPage = styled(P)`
   animation-name: none;
   margin-bottom: 20px;
   font-weight: 400;
+  color: ${(props) => props.theme.colorparagraph};
+`;
+export const Subtitle = styled.p`
+  line-height: 2;
+  font-size: 1rem;
+  width: 47em;
+  margin-bottom: 8px;
+  margin-right: 5em;
+  font-weight: 500;
+  text-align: center;
   color: ${(props) => props.theme.colorparagraph};
 `;

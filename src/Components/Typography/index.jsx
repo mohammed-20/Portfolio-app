@@ -39,3 +39,7 @@ export const ParaPage = (props) => {
   const { children } = props;
   return <S.ParaPage>{children}</S.ParaPage>;
 };
+export const Subtitle = (props) => {
+  const { children } = props;
+  return <S.Subtitle>{children}</S.Subtitle>;
+};
