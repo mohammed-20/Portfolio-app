@@ -20,14 +20,18 @@ export const NavBar = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: center;
+  .active {
+    background-color: #000000;
+    color: #ffffff;
+  }
 `;
 export const NavItme = styled(Link)`
   text-decoration: none;
   color: ${(props) => props.theme.fontColor};
   list-style: none;
-  padding: 0.5em 2em;
-  font-size: 23px;
-  margin-top: 0.5em;
+  padding: 0.7em 3em;
+  font-size: 21px;
+
   line-height: 1.3;
   &:hover {
     color: #fff;
