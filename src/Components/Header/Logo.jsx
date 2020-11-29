@@ -6,6 +6,7 @@ const SvgLogo = styled.svg`
   width: 55px;
   font-weight: 900;
   margin-top: 0.65em;
+  margin-bottom: 0.4em;
   font-size: 2rem;
   line-height: 1.2;
   display: flex;
