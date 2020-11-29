@@ -19,7 +19,7 @@ const Wrapper = styled.section`
 
   display: block;
   position: relative;
-  width: 85em;
+  width: 101%;
   height: 60vh;
   z-index: 2;
 `;
@@ -27,13 +27,13 @@ const Overlay = styled.div`
   background-color: rgb(0, 0, 0, 0.7);
   position: absolute;
   height: 60vh;
-  width: 85em;
+  width: 101%;
   z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   top: 0;
-  padding-left: 5em;
+  padding-left: 3em;
 `;
 
 const Future = styled.div`

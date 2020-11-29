@@ -32,7 +32,7 @@ export const ColorLabel = styled.div`
   display: block;
   background-color: ${({ theme }) => theme.backgroundLabel};
 
-  box-shadow: -2px 1px 5px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 1px 5px 1px rgba(0, 0, 0, 0.4);
   border-radius: 0 20px 20px 0;
   z-index: 2;
   width: 14.5em;
