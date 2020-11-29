@@ -3,20 +3,26 @@ import styled from "styled-components";
 export const TitlePage = styled.div`
   margin-bottom: 30px;
   position: relative;
-  margin-top: -30px;
+  margin-top: -8px;
   color: ${(props) => props.theme.titlespancolor};
+  display: flex;
+  justify-content: center;
+  margin-left: 44px;
 `;
 export const TitleSpan = styled.span`
   border-bottom: 3px dashed;
   padding-bottom: 10px;
   color: ${(props) => props.theme.primary};
-  padding-right: 10px;
+
+  position: relative;
+  left: -11px;
+  margin-left: -162px;
 `;
 
 export const HeadSpan = styled.span`
   position: absolute;
-  right: -31px;
-  top: -45px;
+
+  top: -34px;
   font-weight: 700;
   font-size: 80px;
   z-index: -1;
