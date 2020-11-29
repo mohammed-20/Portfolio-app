@@ -1,106 +1,40 @@
-import React, { useState } from "react";
+import React, { useState, createContext } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import {
-  yellow,
-  blue,
-  red,
-  green,
-  mayablue,
-  roman,
-  springgreen,
-  violent,
-  darkBlue,
-  darkCyan,
-  darkGreen,
-  darkIndig,
-  darkOrang,
-  darkPink,
-  darkPurpal,
-  darkRed,
-} from "./Theme";
+import * as Themes from "./theme";
 import { ThemeProvider } from "styled-components";
 import Home from "./Pages/Home";
 import AboutUs from "./Pages/AboutUs";
+import Resume from "./Pages/Resume";
+import Services from "./Pages/Services";
 import "./App.css";
+
+export const Themecontext = createContext({});
 function App() {
-  const [theme, setTheme] = useState("");
+  const [theme, setTheme] = useState("yellow");
 
   const handleClick = (e) => {
     setTheme(e.target.id);
   };
 
-  const toggleTheme = () => {
-    //Light Color
-    if (theme === "blue") {
-      return blue;
-    }
-    if (theme === "green") {
-      return green;
-    }
-    if (theme === "mayablue") {
-      return mayablue;
-    }
-    if (theme === "red") {
-      return red;
-    }
-    if (theme === "roman") {
-      return roman;
-    }
-    if (theme === "springgreen") {
-      return springgreen;
-    }
-    if (theme === "violent") {
-      return violent;
-    }
-    if (theme === "yellow") {
-      return yellow;
-    }
-    //Dark Color
-    if (theme === "darkBlue") {
-      return darkBlue;
-    }
-    if (theme === "darkCyan") {
-      return darkCyan;
-    }
-    if (theme === "darkGreen") {
-      return darkGreen;
-    }
-    if (theme === "darkIndig") {
-      return darkIndig;
-    }
-    if (theme === "darkOrang") {
-      return darkOrang;
-    }
-    if (theme === "darkPink") {
-      return darkPink;
-    }
-    if (theme === "darkPurpal") {
-      return darkPurpal;
-    }
-    if (theme === "darkRed") {
-      return darkRed;
-    }
-    return yellow;
-  };
-
   return (
     <div className="App">
-      <ThemeProvider theme={toggleTheme()}>
+      <ThemeProvider theme={Themes[theme]}>
         <Router>
           <Switch>
-            <Route exact path="/">
-              <Home onClick={handleClick} />
-            </Route>
-            <Route exact path="/About">
-              <AboutUs onClick={handleClick} />
-            </Route>
-            {/*
-          <Route exact path="/Resume">
-            Resume
-          </Route>
-          <Route exact path="/services">
-            Services
-          </Route>
+            <Themecontext.Provider value={handleClick}>
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route exact path="/About">
+                <AboutUs />
+              </Route>
+              <Route exact path="/Resume">
+                <Resume />
+              </Route>
+              <Route exact path="/services">
+                <Services />
+              </Route>
+              {/*
           <Route exact path="/Portfolio">
             Portfolio
           </Route>
@@ -110,6 +44,7 @@ function App() {
           <Route exact path="/ContactUs">
             ContactUs
           </Route> */}
+            </Themecontext.Provider>
           </Switch>
         </Router>
       </ThemeProvider>

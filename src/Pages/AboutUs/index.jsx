@@ -8,11 +8,10 @@ import Button from "../../Components/Button";
 import InfoSection from "./InfoSection";
 import Skills from "./Skills";
 
-export default function AboutUs(props) {
-  const { onClick } = props;
+export default function AboutUs() {
   return (
     <S.Wrapper>
-      <ColorPicker onClick={onClick} />
+      <ColorPicker />
       <S.Main>
         <S.Content1>
           <S.DivImg>
