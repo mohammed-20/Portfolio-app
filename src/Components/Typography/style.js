@@ -63,9 +63,6 @@ export const H4 = styled.h4`
   color: ${(props) => props.theme.textblack};
 `;
 export const Head4 = styled(H4)`
-  font-weight: 700;
-  font-size: 1.5rem;
-  line-height: 1.2;
   color: ${(props) => props.theme.white};
 `;
 
@@ -99,7 +96,7 @@ export const ParaPage = styled(P)`
 export const Subtitle = styled.p`
   line-height: 2;
   font-size: 1rem;
-  width: 47em;
+  width: 100%;
   margin-bottom: 8px;
   margin-right: 5em;
   font-weight: 500;
