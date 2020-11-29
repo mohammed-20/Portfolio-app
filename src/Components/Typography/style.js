@@ -54,26 +54,13 @@ export const H2 = styled.h2`
   font-size: 2.2rem;
   line-height: 1.2;
   padding-right: 0.8em;
-
-  &::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0.9em;
-    width: 40px;
-    height: 40px;
-    transform: rotate(45deg);
-    z-index: 0;
-    background-color: ${(props) => props.theme.primary};
-    margin-right: -0.1em;
-  }
 `;
 
 export const H4 = styled.h4`
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 1.2;
-  color: ${(props) => props.theme.colorparagraph};
+  color: ${(props) => props.theme.textblack};
 `;
 export const Head4 = styled(H4)`
   font-weight: 700;
