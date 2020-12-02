@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 export const Wrapper = styled.nav`
   display: flex;
   flex-direction: column;
@@ -25,13 +25,12 @@ export const NavBar = styled.ul`
     color: #ffffff;
   }
 `;
-export const NavItme = styled(Link)`
+export const NavItme = styled(NavLink)`
   text-decoration: none;
   color: ${(props) => props.theme.fontColor};
   list-style: none;
   padding: 0.7em 3em;
   font-size: 21px;
-
   line-height: 1.3;
   &:hover {
     color: #fff;
