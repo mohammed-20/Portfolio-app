@@ -55,7 +55,15 @@ export const H2 = styled.h2`
   line-height: 1.2;
   padding-right: 0.8em;
 `;
+export const H3 = styled.h3`
+  color: ${(props) => props.theme.titlespancolor};
+  margin-bottom: 0.7em;
 
+  text-align: left;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.2;
+`;
 export const H4 = styled.h4`
   font-weight: 700;
   font-size: 1.5rem;
@@ -78,7 +86,7 @@ export const H6 = styled.h6`
 export const P = styled.p`
   line-height: 1;
   font-size: 1.3rem;
-  margin: 20px 0;
+  margin: 1.25em 0;
   animation-name: ${fadeInDownBig};
   animation-fill-mode: both;
   animation-duration: 1s;
@@ -97,7 +105,7 @@ export const Subtitle = styled.p`
   line-height: 2;
   font-size: 1rem;
   width: 100%;
-  margin-bottom: 8px;
+  margin-bottom: 0.5em;
   margin-right: 5em;
   font-weight: 500;
   text-align: center;

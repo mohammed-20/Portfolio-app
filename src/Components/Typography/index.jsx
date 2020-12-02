@@ -12,7 +12,10 @@ export const PageHead1 = (props) => {
   const { children } = props;
   return <S.PageHead1>{children}</S.PageHead1>;
 };
-
+export const H3 = (props) => {
+  const { children } = props;
+  return <S.H3>{children}</S.H3>;
+};
 export const H2 = (props) => {
   const { children } = props;
   return <S.H2>{children}</S.H2>;
