@@ -6,6 +6,7 @@ import Home from "./Pages/Home";
 import AboutUs from "./Pages/AboutUs";
 import Resume from "./Pages/Resume";
 import Services from "./Pages/Services";
+import Portfolio from "./Pages/Portfolio";
 import "./App.css";
 
 export const Themecontext = createContext({});
@@ -34,10 +35,10 @@ function App() {
               <Route exact path="/services">
                 <Services />
               </Route>
+              <Route exact path="/Portfolio">
+                <Portfolio />
+              </Route>
               {/*
-          <Route exact path="/Portfolio">
-            Portfolio
-          </Route>
           <Route exact path="/Testimoials">
             Testimoials
           </Route>
