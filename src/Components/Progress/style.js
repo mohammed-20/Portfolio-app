@@ -10,26 +10,26 @@ export const DivProgres = styled.div`
   overflow: hidden;
   font-size: 0.75rem;
   width: 60em;
-  margin-bottom: 25px;
+  margin-bottom: 1.5625em;
 `;
 export const Progres = styled.div`
-  padding-left: 50px;
+  padding-left: 3.125em;
   justify-content: start;
   width: 99%;
   justify-content: center;
   flex-direction: row;
   height: 100%;
-  padding-top: 6px;
+  padding-top: 0.375em;
   font-weight: 500;
   align-items: center;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 0.9375rem;
   background-color: ${(props) => props.theme.primary};
   transition: none;
   color: ${(props) => props.theme.fontColor};
 `;
 export const LabelProgress = styled.span`
-  margin-left: 20px;
+  margin-left: 1.25em;
   font-weight: 500;
   color: ${(props) => props.theme.fontColor};
 `;

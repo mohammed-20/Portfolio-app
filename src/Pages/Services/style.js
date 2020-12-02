@@ -39,8 +39,8 @@ const bounceInUp = keyframes`
 
 export const Wrapper = styled.main`
   height: 100%;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 7.5em;
+  padding-bottom: 7.5em;
   display: flex;
   background-color: ${(props) => props.theme.backgroundPages};
   align-items: center;
@@ -49,9 +49,9 @@ export const Wrapper = styled.main`
   transition: all 0.3s ease-in-out;
 `;
 export const Container = styled.div`
-  padding-right: 15px;
+  padding-right: 0.9375em;
   width: 100%;
-  padding-left: 15px;
+  padding-left: 0.9375em;
   margin-right: auto;
   margin-left: auto;
   align-items: center;
@@ -65,9 +65,9 @@ export const Container = styled.div`
   .content {
     display: flex;
     width: 90%;
-    margin-right: 40px;
+    margin-right: 2.5em;
     width: 92%;
-    margin-right: 32px;
+    margin-right: 2em;
   }
 `;
 export const LeftBox = styled.div`
@@ -76,8 +76,8 @@ export const LeftBox = styled.div`
 export const CentertBox = styled.div`
   border: 3px dashed ${(props) => props.theme.backgroundprogress};
   text-align: center;
-  padding: 20px;
-  margin: 30px 0px;
+  padding: 1.25em;
+  margin: 1.875em 0;
   width: 30%;
   .title-do {
     font-weight: 700;
@@ -89,12 +89,12 @@ export const CentertBox = styled.div`
   .para {
     font-size: 0.9rem;
     width: 95%;
-    margin-bottom: 20px;
-    margin-top: 15px;
+    margin-bottom: 1.25em;
+    margin-top: 0.9375em;
     font-weight: 400;
     color: ${(props) => props.theme.colorparagraph};
     line-height: 1.5;
-    margin: 20px auto;
+    margin: 1.25em auto;
   }
   &:hover {
     border-color: ${(props) => props.theme.primary};

@@ -5,8 +5,8 @@ import DashLine from "../../Components/DashLine";
 // import PageTitle from "../../Components/PageTitle";
 import { Subtitle, PageHead1 } from "../../Components/Typography";
 const Wrapper = styled.section`
-  padding-top: 120px;
-  padding-bottom: 82px;
+  padding-top: 7.5em;
+  padding-bottom: 7.5em;
   display: flex;
 `;
 const Content = styled.div`
@@ -14,8 +14,8 @@ const Content = styled.div`
   flex-direction: column;
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 35px;
+  padding-right: 0.9375em;
+  padding-left: 2.1875em;
   align-items: center;
   justify-content: center;
   margin-top: 2.5em;
@@ -25,16 +25,16 @@ const ContenrProgress = styled.div`
   margin-left: 2em;
 `;
 const TitlePage = styled.div`
-  margin-bottom: 30px;
+  margin-bottom: 1.875em;
   position: relative;
-  margin-top: -30px;
+  margin-top: -1.875em;
   color: ${(props) => props.theme.titlespancolor};
   display: flex;
   justify-content: center;
 `;
 const TitleSpan = styled.span`
   border-bottom: 3px dashed;
-  padding-bottom: 10px;
+  padding-bottom: 0.625em;
   color: ${(props) => props.theme.primary};
 
   left: -11px;
@@ -45,7 +45,7 @@ const HeadSpan = styled.span`
   left: 84px;
   top: -34px;
   font-weight: 700;
-  font-size: 80px;
+  font-size: 5rem;
   z-index: -1;
   color: ${(props) => props.theme.headSpancolor};
 `;

@@ -2,12 +2,11 @@ import styled from "styled-components";
 
 export const DivCard = styled.section`
   position: relative;
-  display: -ms-flexbox;
   display: flex;
 
   width: 100%;
   flex-wrap: wrap;
-  margin-right: -72px;
+  margin-right: -4.5em;
 `;
 export const DateCard = styled.div`
   &::before {
@@ -15,18 +14,18 @@ export const DateCard = styled.div`
     position: absolute;
     top: 0px;
     right: 37px;
-    width: 30px;
-    height: 30px;
+    width: 1.875em;
+    height: 1.875em;
     border-radius: 50%;
     background-color: ${(props) => props.theme.primary};
   }
   .date {
-    padding: 50px 0;
+    padding: 3.125em 0;
     font-weight: 400;
     color: ${(props) => props.theme.colorparagraph};
     font-size: 1.05rem;
     line-height: 1.5;
-    width: 110px;
+    width: 6.875em;
   }
   position: relative;
   flex: 0 0 16%;
@@ -49,8 +48,8 @@ export const Card = styled.div`
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 30px;
-    height: 30px;
+    width: 1.875em;
+    height: 1.875em;
     border-radius: 50% 0 0 0;
     background-color: ${(props) => props.theme.primary};
   }
@@ -68,7 +67,7 @@ export const Card = styled.div`
     line-height: 1.5;
     color: ${(props) => props.theme.colorparagraph};
   }
-  padding: 40px;
+  padding: 2.5em;
   position: relative;
   margin: 0 0 30px 0;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);

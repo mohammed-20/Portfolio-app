@@ -10,16 +10,16 @@ export const Wrapper = styled.div`
   }
 `;
 export const Content = styled.div`
-  padding: 20px;
+  padding: 1.25em;
   overflow: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 0.625em;
+  padding-right: 0.625em;
   color: ${(props) => props.theme.fontColor};
   .description {
     font-size: 0.86rem;
     width: 100%;
-    margin-bottom: 20px;
-    margin-top: 15px;
+    margin-bottom: 1.25em;
+    margin-top: 0.9375em;
     margin-right: 5em;
     font-weight: 500;
     text-align: center;
@@ -35,7 +35,7 @@ export const Content = styled.div`
     font-size: 1.5rem;
     line-height: 1.2;
     color: ${(props) => props.theme.fontColor};
-    margin: 15px 0;
+    margin: 0.9375em 0;
   }
   &:hover {
     background-color: ${(props) => props.theme.colorhover};
