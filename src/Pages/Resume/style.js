@@ -40,8 +40,8 @@ const bounceInUp = keyframes`
 export const Wrapper = styled.main`
   /* width: 100%; */
   height: 100%;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 7.5em;
+  padding-bottom: 7.5em;
   display: flex;
   background-color: ${(props) => props.theme.backgroundPages};
   align-items: center;
@@ -50,9 +50,9 @@ export const Wrapper = styled.main`
   transition: 0.3s;
 `;
 export const Container = styled.div`
-  padding-right: 15px;
+  padding-right: 0.9375em;
   width: 100%;
-  padding-left: 15px;
+  padding-left: 0.9375em;
   margin-right: auto;
   margin-left: auto;
   align-items: center;
@@ -65,18 +65,18 @@ export const Container = styled.div`
   animation-name: ${bounceInUp};
 `;
 export const Row = styled.div`
-  margin-bottom: 50px;
+  margin-bottom: 3.125em;
 `;
 
 export const TableTitle = styled.ul`
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
-  margin-bottom: 30px;
+  margin-bottom: 1.875em;
   list-style: none;
   border: 0;
   width: 85%;
-  margin-left: -85px;
+  margin-left: -5.3125em;
 `;
 export const Tablelabel = styled.li`
   margin-bottom: -1px;
@@ -99,7 +99,7 @@ export const TableItem = styled.a`
   border: unset;
   text-transform: uppercase;
   cursor: pointer;
-  padding: 10px 0;
+  padding: 0.625em 0;
   text-decoration: none;
   ${(props) => (props.displayed === "experience" ? ".active" : "")};
   color: ${(props) => props.theme.fontColor};
