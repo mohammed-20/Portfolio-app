@@ -2,6 +2,7 @@
 const blue = {
   primary: `#5d83ff`,
   fontColor: `#000000`,
+  fontfooter: `#ffffff`,
   backgroundPages: `#e6e6e6`,
   backgroundLabel: `#ffffff`,
   backgroundLogo: `rgba(93, 131, 255, 0.1)`,
@@ -14,5 +15,9 @@ const blue = {
   backgroundprogress: `#cccccc`,
   colorhover: `#7494ff`,
   textblack: `#333333`,
+  backgroundContact: `#ffffff`,
+  hoverInput: "#ffffff",
+  textbalck7: "#777777",
+  backgroundfooter: `#000000`,
 };
 export default blue;

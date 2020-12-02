@@ -2,8 +2,10 @@
 const green = {
   primary: `#5de60e`,
   fontColor: `#000000`,
+  fontfooter: `#ffffff`,
   backgroundPages: `#e6e6e6`,
   backgroundLabel: `#ffffff`,
+  backgroundContact: `#ffffff`,
   backgroundLogo: `rgba(93, 230, 14, 0.1)`,
   blackGray: `#212529`,
   white: `#ffffff`,
@@ -14,5 +16,8 @@ const green = {
   backgroundprogress: `#cccccc`,
   colorhover: `#6cd430`,
   textblack: `#333333`,
+  hoverInput: "#ffffff",
+  textbalck7: "#777777",
+  backgroundfooter: `#000000`,
 };
 export default green;
