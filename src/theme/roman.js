@@ -2,8 +2,10 @@
 const roman = {
   primary: `#E68585`,
   fontColor: `#000000`,
+  fontfooter: `#ffffff`,
   backgroundPages: `#e6e6e6`,
   backgroundLabel: `#ffffff`,
+  backgroundContact: `#ffffff`,
   backgroundLogo: `rgba(230, 133, 133, 0.1)`,
   blackGray: `#212529`,
   white: `#ffffff`,
@@ -14,5 +16,8 @@ const roman = {
   backgroundprogress: `#cccccc`,
   colorhover: `#EB9D9D`,
   textblack: `#333333`,
+  hoverInput: "#ffffff",
+  textbalck7: "#777777",
+  backgroundfooter: `#000000`,
 };
 export default roman;

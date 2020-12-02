@@ -2,8 +2,10 @@
 const darkPink = {
   primary: `#db376e`,
   fontColor: `#ffffff`,
+  fontfooter: `#000000`,
   backgroundPages: `#1E1E1E`,
   backgroundLabel: `#111111`,
+  backgroundContact: `#111111`,
   backgroundLogo: ` #db376e1a`,
   blackGray: `#212529`,
   white: `#ffffff`,
@@ -14,5 +16,8 @@ const darkPink = {
   backgroundprogress: `#333333`,
   colorhover: `#f73777`,
   textblack: `#cccccc`,
+  hoverInput: "#000000",
+  textbalck7: "#777777",
+  backgroundfooter: `#999999`,
 };
 export default darkPink;
