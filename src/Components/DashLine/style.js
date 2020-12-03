@@ -29,14 +29,14 @@ export const Line2 = styled.div`
     ${(props) => props.theme.primary} 30%
   );
   position: absolute;
-  margin-top: 1.875em;
+  margin-top: -5.125em;
   width: 100%;
   height: 100%;
   background-size: 20px 100%;
   transform: rotate(-45deg);
   transform: rotate(-45deg);
   left: unset;
-  margin-left: 19em;
+  margin-left: 20em;
   transform: rotate(40deg);
 `;
 export const Line3 = styled.div`
@@ -71,6 +71,6 @@ export const Line4 = styled.div`
   transform: rotate(-45deg);
   left: unset;
 
-  margin-left: 34em;
+  margin-left: 33em;
   transform: rotate(-70deg);
 `;
