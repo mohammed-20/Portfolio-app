@@ -36,10 +36,6 @@ export default function NavBar() {
         <FontAwesomeIcon icon={faImage} />
       </S.NavItme>
 
-      <S.NavItme to="/Pricing">
-        <FontAwesomeIcon icon={faDollarSign} />
-      </S.NavItme>
-
       <S.NavItme to="/Testimoials">
         <FontAwesomeIcon icon={faQuoteLeft} />
       </S.NavItme>

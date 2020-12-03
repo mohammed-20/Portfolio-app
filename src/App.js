@@ -8,6 +8,7 @@ import Resume from "./Pages/Resume";
 import Services from "./Pages/Services";
 import Portfolio from "./Pages/Portfolio";
 import ContactUs from "./Pages/ContactUs";
+import Testimoials from "./Pages/Testimoials";
 // import Portfolio from "./Pages/Portfolio";
 import "./App.css";
 
@@ -40,14 +41,11 @@ function App() {
               <Route exact path="/Portfolio">
                 <Portfolio />
               </Route>
-              {/*
-              <Route exact path="/Portfolio">
-                <Portfolio />
+
+              <Route exact path="/Testimoials">
+                <Testimoials />
               </Route>
-          <Route exact path="/Testimoials">
-          Testimoials
-          </Route>
-        */}
+
               <Route path="/ContactUs">
                 <ContactUs />
               </Route>
