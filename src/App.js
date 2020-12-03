@@ -6,6 +6,7 @@ import Home from "./Pages/Home";
 import AboutUs from "./Pages/AboutUs";
 import Resume from "./Pages/Resume";
 import Services from "./Pages/Services";
+import Portfolio from "./Pages/Portfolio";
 import ContactUs from "./Pages/ContactUs";
 // import Portfolio from "./Pages/Portfolio";
 import "./App.css";
@@ -35,6 +36,9 @@ function App() {
               </Route>
               <Route path="/services">
                 <Services />
+              </Route>
+              <Route exact path="/Portfolio">
+                <Portfolio />
               </Route>
               {/*
               <Route exact path="/Portfolio">

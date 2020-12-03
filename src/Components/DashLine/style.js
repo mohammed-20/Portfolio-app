@@ -13,14 +13,13 @@ export const Line1 = styled.div`
     ${(props) => props.theme.primary} 30%
   );
   position: absolute;
-  top: 90px;
-  left: -30%;
+  margin-top: 5.625em;
   width: 100%;
   height: 100%;
   background-size: 20px 100%;
   transform: rotate(-45deg);
   transform: rotate(-45deg);
-  left: -52%;
+  margin-left: -28em;
   transform: rotate(-60deg);
 `;
 export const Line2 = styled.div`
@@ -30,15 +29,14 @@ export const Line2 = styled.div`
     ${(props) => props.theme.primary} 30%
   );
   position: absolute;
-  top: -30px;
-  left: -30%;
+  margin-top: 1.875em;
   width: 100%;
   height: 100%;
   background-size: 20px 100%;
   transform: rotate(-45deg);
   transform: rotate(-45deg);
   left: unset;
-  right: -38%;
+  margin-left: 19em;
   transform: rotate(40deg);
 `;
 export const Line3 = styled.div`
@@ -47,14 +45,14 @@ export const Line3 = styled.div`
     transparent 30%,
     ${(props) => props.theme.primary} 30%
   );
+  margin-top: 4.875em;
+  margin-left: -47.125em;
   position: absolute;
-  top: 110px;
   width: 100%;
   height: 100%;
   background-size: 20px 100%;
   transform: rotate(-45deg);
   transform: rotate(-45deg);
-  left: -770px;
   transform: rotate(50deg);
 `;
 export const Line4 = styled.div`
@@ -64,13 +62,15 @@ export const Line4 = styled.div`
     ${(props) => props.theme.primary} 30%
   );
   position: absolute;
-  top: 90px;
+
+  margin-top: 5.6em;
   width: 100%;
   height: 100%;
   background-size: 20px 100%;
   transform: rotate(-45deg);
   transform: rotate(-45deg);
   left: unset;
-  right: -67%;
+
+  margin-left: 34em;
   transform: rotate(-70deg);
 `;
