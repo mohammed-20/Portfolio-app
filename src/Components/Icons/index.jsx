@@ -7,8 +7,8 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import Upwork from "./UpWork";
-
 import * as S from "./style";
+
 export const Facebook = () => {
   return (
     <S.Icon>
@@ -44,5 +44,13 @@ export const Fiverr = () => {
     <S.Icon>
       <FontAwesomeIcon icon={faGithub} size="2x" />
     </S.Icon>
+  );
+};
+
+export const BoxIcon = ({ children }) => {
+  return (
+    <S.DivIcon>
+      <S.ShapBox>{children}</S.ShapBox>
+    </S.DivIcon>
   );
 };

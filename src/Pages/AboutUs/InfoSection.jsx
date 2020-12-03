@@ -14,8 +14,8 @@ const Wrapper = styled.section`
   background-image: url(${Banner});
   background-size: cover;
   background-position: center;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 7.5em;
+  padding-bottom: 7.5em;
 
   display: block;
   position: relative;

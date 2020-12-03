@@ -2,6 +2,7 @@
 const darkBlue = {
   primary: `#1414b3`,
   fontColor: `#ffffff`,
+  fontfooter: `#000000`,
   backgroundPages: `#1E1E1E`,
   backgroundLabel: `#111111`,
   backgroundLogo: ` #1414b31a`,
@@ -14,5 +15,9 @@ const darkBlue = {
   backgroundprogress: `#333333`,
   colorhover: `#121297`,
   textblack: `#cccccc`,
+  backgroundContact: `#111111`,
+  hoverInput: "#000000",
+  textbalck7: "#777777",
+  backgroundfooter: `#999999`,
 };
 export default darkBlue;

@@ -41,7 +41,7 @@ export const Line = styled.div`
   background-image: linear-gradient(to right, transparent 30%, #999999 30%);
   background-size: 20px 100%;
   height: 1px;
-  margin-left: 30px;
+  margin-left: 1.875em;
 `;
 
 export const IconGroup = styled.div`

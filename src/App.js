@@ -7,6 +7,8 @@ import AboutUs from "./Pages/AboutUs";
 import Resume from "./Pages/Resume";
 import Services from "./Pages/Services";
 import Portfolio from "./Pages/Portfolio";
+import ContactUs from "./Pages/ContactUs";
+// import Portfolio from "./Pages/Portfolio";
 import "./App.css";
 
 export const Themecontext = createContext({});
@@ -26,25 +28,29 @@ function App() {
               <Route exact path="/">
                 <Home />
               </Route>
-              <Route exact path="/About">
+              <Route path="/About">
                 <AboutUs />
               </Route>
-              <Route exact path="/Resume">
+              <Route path="/Resume">
                 <Resume />
               </Route>
-              <Route exact path="/services">
+              <Route path="/services">
                 <Services />
               </Route>
               <Route exact path="/Portfolio">
                 <Portfolio />
               </Route>
               {/*
+              <Route exact path="/Portfolio">
+                <Portfolio />
+              </Route>
           <Route exact path="/Testimoials">
-            Testimoials
+          Testimoials
           </Route>
-          <Route exact path="/ContactUs">
-            ContactUs
-          </Route> */}
+        */}
+              <Route path="/ContactUs">
+                <ContactUs />
+              </Route>
             </Themecontext.Provider>
           </Switch>
         </Router>

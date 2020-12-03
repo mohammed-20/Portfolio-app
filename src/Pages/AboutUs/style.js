@@ -45,7 +45,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Main = styled.main`
-  margin-right: 100px;
+  margin-right: 6.25em;
   transition: 0.3s;
   animation-fill-mode: both;
   animation-duration: 1s;
@@ -65,8 +65,8 @@ export const Describtion = styled.div`
   flex-direction: column;
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 35px;
+  padding-right: 0.9375em;
+  padding-left: 2.1875em;
   align-items: flex-start;
   justify-content: center;
 `;
@@ -83,24 +83,24 @@ export const DivBtn = styled.div`
   padding-top: 0.25rem;
 `;
 export const TitlePage = styled.div`
-  margin-bottom: 30px;
+  margin-bottom: 1.875em;
   position: relative;
-  margin-top: -30px;
+  margin-top: -1.875em;
   color: ${(props) => props.theme.titlespancolor};
 `;
 export const TitleSpan = styled.span`
   border-bottom: 3px dashed;
-  padding-bottom: 10px;
+  padding-bottom: 0.625em;
   color: ${(props) => props.theme.primary};
-  padding-right: 10px;
+  padding-right: 0.625em;
 `;
 
 export const HeadSpan = styled.span`
   position: absolute;
-  right: -31px;
-  top: -45px;
+  right: -5px;
+  top: -43px;
   font-weight: 700;
-  font-size: 80px;
+  font-size: 5rem;
   z-index: -1;
   color: ${(props) => props.theme.headSpancolor};
 `;
