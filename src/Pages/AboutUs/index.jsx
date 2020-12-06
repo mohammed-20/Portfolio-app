@@ -1,7 +1,7 @@
 import React from "react";
 import ColorPicker from "../../Components/ColorPicker";
 import Header from "../../Components/Header";
-import AboutImg from "../../images/about.jpg";
+import { About } from "../../images";
 import * as T from "../../Components/Typography";
 import * as S from "./style";
 import Button from "../../Components/Button";
@@ -15,7 +15,7 @@ export default function AboutUs() {
       <S.Main>
         <S.Content1>
           <S.DivImg>
-            <S.AboutImg src={AboutImg} alt="AboutImg" />
+            <S.AboutImg src={About} alt="About" />
           </S.DivImg>
           <S.Describtion>
             <S.TitlePage>
