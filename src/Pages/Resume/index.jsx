@@ -8,7 +8,7 @@ import * as T from "../../Components/Typography";
 import * as S from "./style";
 export default function Resume() {
   const [state, setState] = useState("experience");
-
+  const [active, setActive] = useState("experience");
   return (
     <S.Wrapper>
       <ColorPicker />
@@ -24,13 +24,23 @@ export default function Resume() {
         </S.Row>
         <S.TableTitle>
           <S.Tablelabel onClick={() => setState("experience")}>
-            <S.TableItem className="active">experience</S.TableItem>
+            <S.TableItem
+              onClick={() => setActive("experience")}
+              className={`${active === "experience" ? "active" : ""}`}
+            >
+              experience
+            </S.TableItem>
           </S.Tablelabel>
           <S.Tablelabel onClick={() => setState("education")}>
-            <S.TableItem>education</S.TableItem>
+            <S.TableItem
+              onClick={() => setActive("education")}
+              className={`${active === "education" ? "active" : ""}`}
+            >
+              education
+            </S.TableItem>
           </S.Tablelabel>
         </S.TableTitle>
-        <S.ExperienceContent displayed={state}>
+        <S.ExperienceContent displayed={state} className="fade">
           <Card
             dateparagraph="January 2019 to Present"
             titleCard="Website Developer"
@@ -50,7 +60,7 @@ export default function Resume() {
             descriptioncard="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
           />
         </S.ExperienceContent>
-        <S.EducationContent displayed={state}>
+        <S.EducationContent displayed={state} className="fade">
           <Card
             dateparagraph="January 2014 to 2016"
             titleCard="M.Sc Computer Science"
