@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import BgHome from "../../images/slider-1.jpg";
+import { BgHome } from "../../images";
 
 export const Wrapper = styled.div`
   width: 100%;

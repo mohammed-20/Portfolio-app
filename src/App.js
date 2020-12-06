@@ -9,7 +9,7 @@ import Services from "./Pages/Services";
 import Portfolio from "./Pages/Portfolio";
 import ContactUs from "./Pages/ContactUs";
 import Testimoials from "./Pages/Testimoials";
-// import Portfolio from "./Pages/Portfolio";
+
 import "./App.css";
 
 export const Themecontext = createContext({});
