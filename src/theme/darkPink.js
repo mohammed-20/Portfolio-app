@@ -19,5 +19,6 @@ const darkPink = {
   hoverInput: "#000000",
   textbalck7: "#777777",
   backgroundfooter: `#999999`,
+  titlecolor: `#000000`,
 };
 export default darkPink;

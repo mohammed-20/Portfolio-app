@@ -19,6 +19,7 @@ const red = {
   textblack: `#333333`,
   hoverInput: "#ffffff",
   textbalck7: "#777777",
+  titlecolor: `#111111`,
 };
 
 export default red;

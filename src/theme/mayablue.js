@@ -19,5 +19,6 @@ const mayablue = {
   hoverInput: "#ffffff",
   textbalck7: "#777777",
   backgroundfooter: `#000000`,
+  titlecolor: `#111111`,
 };
 export default mayablue;
