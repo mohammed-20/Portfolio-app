@@ -5,12 +5,13 @@ import DashLine from "../../Components/DashLine";
 import PageTitle from "../../Components/PageTitle";
 import * as S from "./style";
 import * as T from "../../Components/Typography";
+import Gallery from "./Gallery";
 export default function Portfolio() {
   return (
     <S.Wrapper>
       <ColorPicker />
-      <DashLine />
       <S.Container>
+        <DashLine />
         <PageTitle spanhead="My" spantext="My">
           Portfolio
         </PageTitle>
@@ -18,6 +19,7 @@ export default function Portfolio() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur
           ratione quod.
         </T.Subtitle>
+        <Gallery />
       </S.Container>
       <Header />
     </S.Wrapper>
