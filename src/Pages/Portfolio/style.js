@@ -3,7 +3,7 @@ import { BounceInUp } from "../../animation";
 
 export const Wrapper = styled.main`
   width: 100%;
-  height: 200vh;
+  height: 185vh;
   padding-top: 7.5em;
   padding-bottom: 7.5em;
   display: flex;

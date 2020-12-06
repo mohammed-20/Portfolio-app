@@ -8,6 +8,12 @@ export const Icon = styled.div`
     color: ${(props) => props.theme.colorhover};
   }
 `;
+export const PlusIcon = styled.div`
+  cursor: pointer;
+  &:hover {
+    color: ${(props) => props.theme.colorhover};
+  }
+`;
 
 export const DivIcon = styled.div`
   border: 4px dashed ${(props) => props.theme.primary};

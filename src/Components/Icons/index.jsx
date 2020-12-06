@@ -6,6 +6,7 @@ import {
   faLinkedinIn,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import Upwork from "./UpWork";
 import * as S from "./style";
 
@@ -44,6 +45,13 @@ export const Fiverr = () => {
     <S.Icon>
       <FontAwesomeIcon icon={faGithub} size="2x" />
     </S.Icon>
+  );
+};
+export const Plus = () => {
+  return (
+    <S.PlusIcon>
+      <FontAwesomeIcon icon={faPlus} size="2x" />
+    </S.PlusIcon>
   );
 };
 

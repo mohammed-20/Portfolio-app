@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Gallery2, Blog1, Blog2, Blog3 } from "../../images";
+import { Plus } from "../../Components/Icons";
 import * as G from "./stylegallery";
 
 const portfolio = [
@@ -7,36 +8,50 @@ const portfolio = [
     id: 1,
     img: Blog1,
     filter: ["all", "design"],
+    title: "Project title",
+    subtitle: "Category",
   },
   {
     id: 2,
     img: Blog3,
     filter: ["all", "brand"],
+    title: "Project title",
+    subtitle: "Category",
   },
   {
     id: 3,
     img: Blog2,
     filter: ["all", "photos", "videos"],
+    title: "Project title",
+    subtitle: "Category",
   },
   {
     id: 4,
     img: Gallery2,
     filter: ["all", "videos", "design"],
+    title: "Project title",
+    subtitle: "Category",
   },
   {
     id: 5,
     img: Blog2,
     filter: ["all", "videos", "photos", "design"],
+    title: "Project title",
+    subtitle: "Category",
   },
   {
     id: 6,
     img: Gallery2,
     filter: ["all", "photos"],
+    title: "Project title",
+    subtitle: "Category",
   },
   {
     id: 7,
     img: Blog1,
     filter: ["all", "photos", "videos", "design"],
+    title: "Project title",
+    subtitle: "Category",
   },
 ];
 
@@ -78,8 +93,6 @@ export default function Gallery() {
         </G.NavItem>
       </G.Nav>
       <G.Picture>
-        {/* <div className="row"> */}
-        {/* <div className="column"> */}
         {portfolio.map((item) => (
           <G.DivImg
             className={
@@ -88,10 +101,13 @@ export default function Gallery() {
             key={item.id}
           >
             <G.Image src={item.img} alt={item.img} />
+            <G.Overlay>
+              <h3 className="project-title">{item.title}</h3>
+              <h6 className="project-subtitle">{item.subtitle}</h6>
+              <Plus className="plus" />
+            </G.Overlay>
           </G.DivImg>
         ))}
-        {/* </div> */}
-        {/* </div> */}
       </G.Picture>
     </G.Content>
   );

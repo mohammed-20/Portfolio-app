@@ -79,3 +79,41 @@ export const Image = styled.img`
   max-width: 100%;
   height: auto;
 `;
+export const Overlay = styled.div`
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0, 0.7);
+  color: #fff;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  top: 8px;
+  width: 90%;
+  margin: 10px 10px;
+  left: 8px;
+  height: 88%;
+  border-radius: 3%;
+  line-height: 2;
+  visibility: hidden;
+  .project-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: ${(props) => props.theme.primary};
+    line-height: 1.2;
+  }
+  .project-subtitle {
+    margin: 0.5em 0 1em 0;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: ${(props) => props.theme.white};
+  }
+  .plus {
+    cursor: pointer;
+    color: ${(props) => props.theme.primary};
+  }
+  ${DivImg}:hover & {
+    visibility: visible;
+  }
+`;
