@@ -48,7 +48,6 @@ export const H2 = styled.h2`
 export const H3 = styled.h3`
   color: ${(props) => props.theme.titlespancolor};
   margin-bottom: 0.7em;
-
   text-align: left;
   font-weight: 700;
   font-size: 2rem;
