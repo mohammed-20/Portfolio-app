@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import * as T from "../../Components/Typography";
-import Banner from "../../images/banner.jpg";
+import { Banner } from "../../images";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHeart,
