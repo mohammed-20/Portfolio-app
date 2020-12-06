@@ -11,7 +11,7 @@ export const TitlePage = styled.div`
 `;
 export const TitleSpan = styled.span`
   border-bottom: 3px dashed;
-  padding-bottom: 0.625em;
+  padding-bottom: 0.3em;
   color: ${(props) => props.theme.primary};
 
   position: relative;

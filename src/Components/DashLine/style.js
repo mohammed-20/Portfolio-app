@@ -3,8 +3,9 @@ import styled from "styled-components";
 export const GruopLine = styled.div`
   position: relative;
   height: 2px;
-  z-index: 1;
+  z-index: 0;
   width: 70%;
+  display: block;
 `;
 export const Line1 = styled.div`
   background: linear-gradient(
@@ -13,13 +14,13 @@ export const Line1 = styled.div`
     ${(props) => props.theme.primary} 30%
   );
   position: absolute;
-  margin-top: 5.625em;
+  margin-top: 11.625em;
   width: 100%;
   height: 100%;
   background-size: 20px 100%;
   transform: rotate(-45deg);
   transform: rotate(-45deg);
-  margin-left: -28em;
+  margin-left: -31em;
   transform: rotate(-60deg);
 `;
 export const Line2 = styled.div`
@@ -29,14 +30,13 @@ export const Line2 = styled.div`
     ${(props) => props.theme.primary} 30%
   );
   position: absolute;
-  margin-top: -5.125em;
   width: 100%;
   height: 100%;
   background-size: 20px 100%;
   transform: rotate(-45deg);
   transform: rotate(-45deg);
   left: unset;
-  margin-left: 20em;
+  margin-left: 22em;
   transform: rotate(40deg);
 `;
 export const Line3 = styled.div`
@@ -45,8 +45,8 @@ export const Line3 = styled.div`
     transparent 30%,
     ${(props) => props.theme.primary} 30%
   );
-  margin-top: 4.875em;
-  margin-left: -47.125em;
+  margin-top: 9.875em;
+  margin-left: -46.875em;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -62,15 +62,13 @@ export const Line4 = styled.div`
     ${(props) => props.theme.primary} 30%
   );
   position: absolute;
-
-  margin-top: 5.6em;
+  margin-top: 10em;
   width: 100%;
   height: 100%;
   background-size: 20px 100%;
   transform: rotate(-45deg);
   transform: rotate(-45deg);
   left: unset;
-
-  margin-left: 33em;
+  margin-left: 35em;
   transform: rotate(-70deg);
 `;

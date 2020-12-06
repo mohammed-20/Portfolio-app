@@ -1,23 +1,13 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
+import { FadeInDownBig } from "../../animation";
 
-const fadeInDownBig = keyframes`
-   from {
-    opacity: 0;
-    transform: translate3d(0, -2000px, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}`;
 export const H1 = styled.h1`
   font-size: 2.5rem;
   line-height: 1.2;
   font-weight: 400;
   letter-spacing: 15px;
   text-transform: uppercase;
-  animation-name: ${fadeInDownBig};
+  animation-name: ${FadeInDownBig};
   animation-fill-mode: both;
   animation-duration: 1s;
 `;
@@ -27,7 +17,7 @@ export const Head1 = styled.h1`
   font-weight: 700;
   text-transform: uppercase;
   margin: 0.2em 0 0.2em 0;
-  animation-name: ${fadeInDownBig};
+  animation-name: ${FadeInDownBig};
   animation-fill-mode: both;
   animation-duration: 1s;
   animation-delay: 1s;
@@ -87,7 +77,7 @@ export const P = styled.p`
   line-height: 1;
   font-size: 1.3rem;
   margin: 1.25em 0;
-  animation-name: ${fadeInDownBig};
+  animation-name: ${FadeInDownBig};
   animation-fill-mode: both;
   animation-duration: 1s;
   animation-delay: 2s;

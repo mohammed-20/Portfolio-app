@@ -1,41 +1,5 @@
-import styled, { keyframes } from "styled-components";
-const bounceInUp = keyframes`
-  from,
-  60%,
-  75%,
-  90%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 3000px, 0);
-    transform: translate3d(0, 3000px, 0);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(0, -20px, 0);
-    transform: translate3d(0, -20px, 0);
-  }
-
-  75% {
-    -webkit-transform: translate3d(0, 10px, 0);
-    transform: translate3d(0, 10px, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(0, -5px, 0);
-    transform: translate3d(0, -5px, 0);
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-`;
+import styled from "styled-components";
+import { BounceInUp, Fade } from "../../animation";
 
 export const Wrapper = styled.main`
   /* width: 100%; */
@@ -62,7 +26,11 @@ export const Container = styled.div`
   transition: 0.3s;
   animation-fill-mode: both;
   animation-duration: 1s;
-  animation-name: ${bounceInUp};
+  animation-name: ${BounceInUp};
+  .fade {
+    animation-duration: 0.15s;
+    animation-name: ${Fade};
+  }
 `;
 export const Row = styled.div`
   margin-bottom: 3.125em;
@@ -99,9 +67,9 @@ export const TableItem = styled.a`
   border: unset;
   text-transform: uppercase;
   cursor: pointer;
+
   padding: 0.625em 0;
   text-decoration: none;
-  ${(props) => (props.displayed === "experience" ? ".active" : "")};
   color: ${(props) => props.theme.fontColor};
   &:hover {
     color: ${(props) => props.theme.colorhover};
@@ -112,7 +80,7 @@ export const ExperienceContent = styled.div`
   margin: auto;
 
   ${(props) =>
-    props.displayed === "experience" ? "display:block;" : "display:none;"};
+    props.displayed === "experience" ? `display:block;` : "display:none; "};
 `;
 export const EducationContent = styled.div`
   margin: auto;

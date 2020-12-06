@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   padding: 20px;
   margin: 30px 30px;
   &:hover {
-    border-color: ${(props) => props.theme.colorhover};
+    border-color: ${(props) => props.theme.primary};
   }
 `;
 export const Content = styled.div`
@@ -38,7 +38,7 @@ export const Content = styled.div`
     margin: 0.9375em 0;
   }
   &:hover {
-    background-color: ${(props) => props.theme.colorhover};
+    background-color: ${(props) => props.theme.primary};
     transition: all 0.3s ease-in-out;
   }
 `;
