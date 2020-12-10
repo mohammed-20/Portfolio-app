@@ -4,32 +4,36 @@ import { Testimonialsbg } from "../../images";
 
 export const Wrapper = styled.main`
   width: 100%;
-  height: 100vh;
+  height: 140vh;
   background-image: url(${Testimonialsbg});
   z-index: -2;
   transition: 0.3s;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
 `;
 export const Overlay = styled.div`
-  padding-top: 7.5em;
+  padding-top: 7em;
   background-color: rgb(0, 0, 0, 0.65);
   z-index: 1;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 `;
 export const Container = styled.div`
-  padding-right: 0.9375em;
-  width: 100%;
-  padding-left: 0.9375em;
+  padding-right: 2.9375em;
+  width: 80%;
   margin-right: auto;
   margin-left: auto;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+  height: 100%;
   z-index: 1;
   transition: 0.3s;
   animation-fill-mode: both;
   animation-duration: 1s;
   animation-name: ${BounceInUp};
+  .slider {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 export const TitlePage = styled.div`

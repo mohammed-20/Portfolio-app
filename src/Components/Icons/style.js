@@ -14,7 +14,11 @@ export const PlusIcon = styled.div`
     color: ${(props) => props.theme.colorhover};
   }
 `;
-
+export const QuotIcon = styled.div`
+  color: ${(props) => props.theme.primary};
+  font-size: 4.5em;
+  vertical-align: -1.125em;
+`;
 export const DivIcon = styled.div`
   border: 4px dashed ${(props) => props.theme.primary};
   padding-bottom: 1px;

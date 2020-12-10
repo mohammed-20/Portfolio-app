@@ -1,7 +1,7 @@
 import React from "react";
 import ColorPicker from "../../Components/ColorPicker";
 import Header from "../../Components/Header";
-
+import Slider from "../../Components/Slider";
 import * as S from "./style";
 export default function Testimoials() {
   return (
@@ -16,6 +16,9 @@ export default function Testimoials() {
               <S.TitleSpan>Reviews</S.TitleSpan>
             </h1>
           </S.TitlePage>
+          <div className="slider">
+            <Slider />
+          </div>
         </S.Container>
         <Header />
       </S.Overlay>
