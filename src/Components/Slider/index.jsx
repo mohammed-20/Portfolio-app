@@ -73,7 +73,9 @@ export default function Slider() {
   //   el.removeEventListener("mousemove", handleMouseMove);
   // };
   const handleClick = (e) => {
-    setShow(e.target.id);
+    const { id } = e.target;
+    const newid = Number(id);
+    setShow(newid);
   };
 
   useEffect(() => {
@@ -110,17 +112,17 @@ export default function Slider() {
 
       <S.Dotes>
         <S.Doteitem
-          id="1"
+          id={1}
           onClick={handleClick}
           className={`${show === 1 ? "active" : ""}`}
         />
         <S.Doteitem
-          id="2"
+          id={2}
           onClick={handleClick}
           className={`${show === 2 ? "active" : ""}`}
         />
         <S.Doteitem
-          id="3"
+          id={3}
           onClick={handleClick}
           className={`${show === 3 ? "active" : ""}`}
         />

@@ -34,7 +34,7 @@ export default function Footer() {
         <I.Facebook />
         <I.Twitter />
         <I.UpWork className="upwork" />
-        <I.Fiverr />
+        <I.Github />
         <I.LinkedIn />
       </IconGroup>
       <p className="copyright">

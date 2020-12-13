@@ -23,7 +23,7 @@ export default function Home() {
             <I.Facebook />
             <I.Twitter />
             <I.UpWork />
-            <I.Fiverr />
+            <I.Github />
             <I.LinkedIn />
           </S.IconGroup>
         </S.Content>
