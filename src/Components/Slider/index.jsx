@@ -34,42 +34,43 @@ const content = [
 ];
 
 export default function Slider() {
-  const [show, setShow] = useState("1");
-  // const [offset, setOffset] = useState({ x: 0, y: 0 });
+  const [show, setShow] = useState(1);
+  // const [offset, setOffset] = useState({ x: 0 });
+  // const [deltaX, setDeltaX] = useState();
 
-  // const sliderRef = useRef(null);
-  // const CarouselRef = useRef(null);
-
-  // let offsetX;
   // const handleMouseMove = (e) => {
-  //   const el = e.target;
-  //   setOffset((offset) => ({ ...offset, x: e.clientX, y: 0 }));
-  //   el.style.left = offsetX + "px";
+  //   console.log(offset.x - e.clientX);
+  //   const _deltaX = offset.x - e.clientX;
+  //   setDeltaX(_deltaX);
+
+  //   setOffset((offset) => ({ ...offset, x: e.clientX }));
   // };
 
   // const handleMouseDown = (e) => {
   //   const el = e.target;
-  //   console.log(el);
-  //   // el.style.transform = "translateX(" + "px)";
-  //   el.addEventListener("mousedown", handleMouseMove);
+  //   setDeltaX(0);
+  //   setOffset({ x: e.clientX });
 
-  //   offsetX = el.getBoundingClientRect().left;
-
-  //   // el.addEventListener("mouseup", handleMouseUp);
+  //   el.addEventListener("mousemove", handleMouseMove);
+  //   el.addEventListener("mouseup", handleMouseUp);
   // };
 
   // const handleMouseUp = (e) => {
   //   const el = e.target;
-  //   // el.removeEventListener("mousedwon", handleMouseMove);
-  //   if (show === "1") {
-  //     setShow((show) => (show = "2"));
+  //   if (Math.abs(deltaX) > 50) {
+  //     if (deltaX > 0) {
+  //       setShow((show) => {
+  //         let newShow = show + 1;
+  //         return newShow > 3 ? 1 : show;
+  //       });
+  //     } else {
+  //       setShow((show) => {
+  //         let newShow = show - 1;
+  //         return newShow < 1 ? 3 : show;
+  //       });
+  //     }
   //   }
-  //   if (show === "2") {
-  //     setShow((show) => (show = "3"));
-  //   }
-  //   if (show === "3") {
-  //     setShow((show) => (show = "1"));
-  //   }
+  //   el.removeEventListener("mousemove", handleMouseMove);
   // };
   const handleClick = (e) => {
     setShow(e.target.id);
@@ -77,33 +78,21 @@ export default function Slider() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (show === "1") {
-        setShow((show) => (show = "2"));
+      if (show > 0) {
+        setShow((show) => {
+          let newShow = show + 1;
+          return newShow > 3 ? 1 : newShow;
+        });
       }
-      if (show === "2") {
-        setShow((show) => (show = "3"));
-      }
-      if (show === "3") {
-        setShow((show) => (show = "1"));
-      }
-    }, 5000);
+    }, 4000);
     return () => clearInterval(interval);
   }, [show]);
 
   return (
     <S.Slider>
-      {/* <S.SliderCont> */}
       <div className="row">
         {content.map((item) => (
-          <S.Carousel
-            // offset={offset}
-            className={`show${show}`}
-            key={item.id}
-            // ref={CarouselRef}
-            // onMouseDown={handleMouseDown}
-            // onMouseMove={handleMouseDown}
-            // onMouseUp={handleMouseUp}
-          >
+          <S.Carousel className={`show${show}`} key={item.id}>
             {item.qouteicon}
             <p className="para">{item.descraption}</p>
             <div className="image">
@@ -118,22 +107,22 @@ export default function Slider() {
           </S.Carousel>
         ))}
       </div>
-      {/* </S.SliderCont> */}
+
       <S.Dotes>
         <S.Doteitem
-          id={1}
+          id="1"
           onClick={handleClick}
-          className={`${show === "1" ? "active" : ""}`}
+          className={`${show === 1 ? "active" : ""}`}
         />
         <S.Doteitem
-          id={2}
+          id="2"
           onClick={handleClick}
-          className={`${show === "2" ? "active" : ""}`}
+          className={`${show === 2 ? "active" : ""}`}
         />
         <S.Doteitem
-          id={3}
+          id="3"
           onClick={handleClick}
-          className={`${show === "3" ? "active" : ""}`}
+          className={`${show === 3 ? "active" : ""}`}
         />
       </S.Dotes>
     </S.Slider>
