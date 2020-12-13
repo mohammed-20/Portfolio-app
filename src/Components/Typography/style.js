@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { FadeInDownBig } from "../../animation";
-
+import { device } from "../../responsive";
 export const H1 = styled.h1`
   font-size: 2.5rem;
   line-height: 1.2;
@@ -10,6 +10,12 @@ export const H1 = styled.h1`
   animation-name: ${FadeInDownBig};
   animation-fill-mode: both;
   animation-duration: 1s;
+  @media ${device.laptop} {
+    font-size: 2.1rem;
+  }
+  @media ${device.mobileL} {
+    font-size: 1.5rem;
+  }
 `;
 export const Head1 = styled.h1`
   font-size: 3.5rem;
@@ -21,12 +27,24 @@ export const Head1 = styled.h1`
   animation-fill-mode: both;
   animation-duration: 1s;
   animation-delay: 1s;
+  @media ${device.laptop} {
+    font-size: 2.9rem;
+  }
+  @media ${device.mobileL} {
+    font-size: 2rem;
+  }
 `;
 export const PageHead1 = styled.h1`
   font-size: 2.7rem;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 1px;
+  @media ${device.laptop} {
+    font-size: 2.5rem;
+  }
+  @media ${device.mobileL} {
+    font-size: 2rem;
+  }
 `;
 export const H2 = styled.h2`
   position: absolute;
@@ -44,6 +62,20 @@ export const H2 = styled.h2`
   font-size: 2.2rem;
   line-height: 1.2;
   padding-right: 0.8em;
+  @media ${device.mobileL} {
+    display: none;
+  }
+
+  @media ${device.laptopL} {
+    max-width: 6.7em;
+    height: 15vh;
+  }
+  @media ${device.laptop} {
+    max-width: 5.7em;
+    font-size: 2rem;
+    height: 18vh;
+    padding-right: 0.3em;
+  }
 `;
 export const H3 = styled.h3`
   color: ${(props) => props.theme.titlespancolor};
@@ -52,15 +84,36 @@ export const H3 = styled.h3`
   font-weight: 700;
   font-size: 2rem;
   line-height: 1.2;
+  @media ${device.laptop} {
+    font-size: 1.7rem;
+  }
+  @media ${device.mobileL} {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 `;
 export const H4 = styled.h4`
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 1.2;
   color: ${(props) => props.theme.textblack};
+  @media ${device.laptop} {
+    font-size: 1.26rem;
+  }
+  @media ${device.mobileL} {
+    font-size: 1.1rem;
+    width: 20em;
+  }
 `;
 export const Head4 = styled(H4)`
   color: ${(props) => props.theme.white};
+  @media ${device.laptop} {
+    font-size: 1rem;
+    width: 8em;
+  }
+  @media ${device.mobileL} {
+    margin-left: 1em;
+  }
 `;
 
 export const H6 = styled.h6`
@@ -80,6 +133,12 @@ export const P = styled.p`
   animation-fill-mode: both;
   animation-duration: 1s;
   animation-delay: 2s;
+  @media ${device.laptop} {
+    font-size: 1.2rem;
+  }
+  @media ${device.mobileL} {
+    font-size: 1rem;
+  }
 `;
 export const ParaPage = styled(P)`
   line-height: 2;
@@ -89,6 +148,15 @@ export const ParaPage = styled(P)`
   margin-bottom: 20px;
   font-weight: 400;
   color: ${(props) => props.theme.colorparagraph};
+  @media ${device.laptop} {
+    width: 39em;
+    line-height: 1.8;
+  }
+  @media ${device.mobileL} {
+    width: 32em;
+    line-height: 1.5;
+    font-size: 0.8rem;
+  }
 `;
 export const Subtitle = styled.p`
   line-height: 2;
@@ -99,4 +167,13 @@ export const Subtitle = styled.p`
   font-weight: 500;
   text-align: center;
   color: ${(props) => props.theme.colorparagraph};
+  @media ${device.laptop} {
+    margin-right: 1em;
+  }
+  @media ${device.mobileL} {
+    font-size: 0.85rem;
+    margin-left: 45px;
+    margin-right: -4em;
+    width: 100%;
+  }
 `;

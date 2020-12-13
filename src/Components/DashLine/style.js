@@ -1,11 +1,14 @@
 import styled from "styled-components";
-
+import { device } from "../../responsive";
 export const GruopLine = styled.div`
   position: relative;
   height: 2px;
   z-index: 0;
   width: 70%;
   display: block;
+  @media ${device.laptop} {
+    display: none;
+  }
 `;
 export const Line1 = styled.div`
   background: linear-gradient(

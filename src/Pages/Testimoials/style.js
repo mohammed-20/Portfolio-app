@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { BounceInUp } from "../../animation";
 import { Testimonialsbg } from "../../images";
+import { device } from "../../responsive";
 
 export const Wrapper = styled.main`
   width: 100%;
@@ -11,6 +12,13 @@ export const Wrapper = styled.main`
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
+  @media ${device.laptopL} {
+    height: 100vh;
+    background-position: -54px -30px;
+  }
+  @media ${device.mobileL} {
+    background-position: -345px 0px;
+  }
 `;
 export const Overlay = styled.div`
   padding-top: 7em;
@@ -44,12 +52,19 @@ export const TitlePage = styled.div`
   display: flex;
   justify-content: center;
   margin-left: -3.3em;
+  @media ${device.mobileL} {
+    margin-left: 1em;
+    margin-top: -4em;
+  }
   .pagehead {
     font-size: 2.7rem;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 1px;
     color: #e6e6e6;
+    @media ${device.mobileL} {
+      font-size: 2rem;
+    }
   }
 `;
 export const TitleSpan = styled.span`
@@ -58,6 +73,9 @@ export const TitleSpan = styled.span`
   color: ${(props) => props.theme.primary};
   position: relative;
   margin-left: 0.3em;
+  @media ${device.mobileL} {
+    font-size: 2rem;
+  }
 `;
 
 export const HeadSpan = styled.span`
@@ -68,4 +86,9 @@ export const HeadSpan = styled.span`
   font-size: 5rem;
   z-index: -1;
   color: ${(props) => props.theme.headSpancolor};
+  @media ${device.mobileL} {
+    font-size: 3rem;
+    top: -13px;
+    right: -3px;
+  }
 `;

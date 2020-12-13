@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { device } from "../../responsive";
 export const Button = styled.button`
   font-weight: 500;
   color: ${(props) => props.theme.fontColor};
@@ -14,5 +14,9 @@ export const Button = styled.button`
   outline: none;
   &:hover {
     background-color: ${(props) => props.theme.backgroundhover};
+  }
+  @media ${device.mobileL} {
+    padding: 0.47rem 0.75rem;
+    font-size: 0.8rem;
   }
 `;

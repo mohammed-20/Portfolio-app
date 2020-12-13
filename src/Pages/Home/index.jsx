@@ -1,5 +1,4 @@
 import React from "react";
-
 import Header from "../../Components/Header";
 import ParticlesShap from "../../Components/Particles";
 import ColorPicker from "../../Components/ColorPicker";
