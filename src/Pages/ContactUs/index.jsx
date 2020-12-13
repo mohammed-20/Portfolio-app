@@ -1,8 +1,7 @@
 import React from "react";
 import ColorPicker from "../../Components/ColorPicker";
 import Header from "../../Components/Header";
-import Input from "../../Components/Input";
-import Button from "../../Components/Button";
+import Form from "./Form";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPhoneAlt,
@@ -57,20 +56,7 @@ export default function ContactUs() {
             </S.TitlePage>
           </div>
           <T.H3>I Am Available For Freelance</T.H3>
-          <Input
-            type="text"
-            name="username"
-            id="username"
-            placeholder="Full Name"
-          />
-          <Input type="email" name="eamil" id="eamil" placeholder="Email" />
-          <textarea
-            className="textarea"
-            name="message"
-            id="message"
-            placeholder="Message"
-          ></textarea>
-          <Button className="button">Send Message</Button>
+          <Form />
         </S.RightSide>
       </S.Container>
       <Header />
