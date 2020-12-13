@@ -5,14 +5,14 @@ const Upwork = styled.svg`
   height: 2rem;
   width: 2rem;
   cursor: pointer;
-  fill: ${(props) => props.theme.white};
+  fill: ${(props) => props.theme.fontfooter};
 
   &:hover {
     fill: ${(props) => props.theme.colorhover};
   }
 `;
 
-export default function UpWork({ theme }) {
+export default function UpWork() {
   return (
     <Upwork
       xmlns="http://www.w3.org/2000/svg"
