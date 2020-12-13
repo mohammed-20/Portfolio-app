@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { BounceInUp } from "../../animation";
-
+import { device } from "../../responsive";
 export const Wrapper = styled.main`
   width: 100%;
   height: 185vh;
@@ -13,6 +13,10 @@ export const Wrapper = styled.main`
   z-index: -2;
   transition: 0.3s;
   overflow: hidden;
+  @media ${device.mobileL} {
+    padding-bottom: 3em;
+    height: 100%;
+  }
 `;
 
 export const Container = styled.div`
@@ -29,6 +33,12 @@ export const Container = styled.div`
   animation-fill-mode: both;
   animation-duration: 1s;
   animation-name: ${BounceInUp};
+  @media ${device.mobileL} {
+    padding-right: 0em;
+    padding-left: 0em;
+    margin-right: 80px;
+    margin-left: -24px;
+  }
 `;
 export const Row = styled.div`
   margin-bottom: 3.125em;

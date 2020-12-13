@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { ZoomIn, ZoomOut } from "../../animation";
+import { device } from "../../responsive";
 export const Content = styled.div`
   margin-bottom: -18px;
   width: 85%;
@@ -15,6 +16,13 @@ export const Nav = styled.div`
   z-index: 0;
   margin-left: 19em;
   cursor: pointer;
+  @media ${device.laptop} {
+    width: 50%;
+    margin-left: 11em;
+  }
+  @media ${device.mobileL} {
+    margin-left: 4.5em;
+  }
   .active {
     color: ${(props) => props.theme.primary};
   }
@@ -28,6 +36,14 @@ export const NavItem = styled.span`
   color: ${(props) => props.theme.colorparagraph};
   &:hover {
     color: ${(props) => props.theme.primary};
+  }
+  @media ${device.laptop} {
+    padding-left: 20px;
+  }
+  @media ${device.mobileL} {
+    padding-left: 15px;
+    padding-right: 10px;
+    font-size: 0.8rem;
   }
   &:first-child {
     border-left: none;
@@ -44,6 +60,11 @@ export const Picture = styled.div`
   padding-right: 20px;
   display: flex;
   flex-wrap: wrap;
+  @media ${device.mobileL} {
+    flex-direction: column;
+    margin-left: 2.5em;
+    width: 280vw;
+  }
 
   .animationIn {
     animation-duration: 0.5s;
@@ -60,12 +81,10 @@ export const Picture = styled.div`
 export const DivImg = styled.div`
   position: relative;
   overflow: hidden;
-
   width: 100%;
   float: left;
   margin-bottom: 0.75rem;
   margin-left: 1em;
-  width: 30%;
   min-width: 0;
   z-index: 0;
   border-radius: 0.25rem;

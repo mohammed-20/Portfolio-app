@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { device } from "../../responsive";
 export const Wrapper = styled.div`
   width: auto;
   height: auto;
@@ -24,6 +24,11 @@ export const ColorBtn = styled.div`
   cursor: pointer;
   justify-content: center;
   box-shadow: 3px 1px 5px 0 rgba(0, 0, 0, 0.6);
+  @media ${device.mobileL} {
+    width: 42px;
+    height: 42px;
+    font-size: 1.4rem;
+  }
 `;
 export const ColorLabel = styled.div`
   padding: 15px 15px 0px 15px;

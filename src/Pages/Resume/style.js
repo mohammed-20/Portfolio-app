@@ -1,8 +1,7 @@
 import styled from "styled-components";
 import { BounceInUp, Fade } from "../../animation";
-
+import { device } from "../../responsive";
 export const Wrapper = styled.main`
-  /* width: 100%; */
   height: 100%;
   padding-top: 7.5em;
   padding-bottom: 7.5em;
@@ -12,6 +11,9 @@ export const Wrapper = styled.main`
   flex-direction: column;
   z-index: -2;
   transition: 0.3s;
+  @media ${device.mobileL} {
+    padding-bottom: 3em;
+  }
 `;
 export const Container = styled.div`
   padding-right: 0.9375em;
@@ -27,6 +29,12 @@ export const Container = styled.div`
   animation-fill-mode: both;
   animation-duration: 1s;
   animation-name: ${BounceInUp};
+  @media ${device.mobileL} {
+    padding-right: 0em;
+    padding-left: 0em;
+    margin-right: 80px;
+    margin-left: -24px;
+  }
   .fade {
     animation-duration: 0.15s;
     animation-name: ${Fade};
@@ -34,6 +42,9 @@ export const Container = styled.div`
 `;
 export const Row = styled.div`
   margin-bottom: 3.125em;
+  @media ${device.mobileL} {
+    margin-bottom: 1em;
+  }
 `;
 
 export const TableTitle = styled.ul`
@@ -45,6 +56,17 @@ export const TableTitle = styled.ul`
   border: 0;
   width: 85%;
   margin-left: -5.3125em;
+  @media ${device.laptopL} {
+    width: 80.5%;
+  }
+  @media ${device.laptop} {
+    width: 89%;
+  }
+  @media ${device.mobileL} {
+    width: 92%;
+    margin-left: 6em;
+    margin-bottom: 1em;
+  }
 `;
 export const Tablelabel = styled.li`
   margin-bottom: -1px;
@@ -74,17 +96,25 @@ export const TableItem = styled.a`
   &:hover {
     color: ${(props) => props.theme.colorhover};
   }
+  @media ${device.mobileL} {
+    padding: 0.4em 0;
+    font-size: 0.8rem;
+  }
 `;
 
 export const ExperienceContent = styled.div`
   margin: auto;
-
+  @media ${device.laptop} {
+    width: 93%;
+  }
   ${(props) =>
     props.displayed === "experience" ? `display:block;` : "display:none; "};
 `;
 export const EducationContent = styled.div`
   margin: auto;
-
+  @media ${device.laptop} {
+    width: 93%;
+  }
   ${(props) =>
     props.displayed === "education" ? "display:block;" : "display:none;"};
 `;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../responsive";
 export const ProgressContainer = styled.div`
   display: flex;
 `;
@@ -11,6 +12,16 @@ export const DivProgres = styled.div`
   font-size: 0.75rem;
   width: 60em;
   margin-bottom: 1.5625em;
+  @media ${device.laptop} {
+    width: 50em;
+    margin-left: 20px;
+  }
+  @media ${device.mobileL} {
+    width: 25em;
+    margin-left: 20px;
+    height: 80%;
+    margin-bottom: 1em;
+  }
 `;
 export const Progres = styled.div`
   padding-left: 3.125em;
@@ -27,9 +38,19 @@ export const Progres = styled.div`
   background-color: ${(props) => props.theme.primary};
   transition: none;
   color: ${(props) => props.theme.fontColor};
+  @media ${device.mobileL} {
+    height: 80%;
+    padding-left: 2.125em;
+    font-size: 0.7rem;
+    padding-top: 0.2em;
+  }
 `;
 export const LabelProgress = styled.span`
   margin-left: 1.25em;
   font-weight: 500;
   color: ${(props) => props.theme.fontColor};
+  @media ${device.mobileL} {
+    padding-left: 1em;
+    font-size: 0.78rem;
+  }
 `;
