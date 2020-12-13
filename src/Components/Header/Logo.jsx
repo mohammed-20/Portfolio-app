@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { device } from "../../responsive";
 
 const SvgLogo = styled.svg`
   height: 56px;
@@ -13,6 +14,20 @@ const SvgLogo = styled.svg`
   align-items: center;
   justify-content: center;
   fill: ${(props) => props.theme.fontColor};
+  @media ${device.laptop} {
+    height: 50px;
+    width: 50px;
+  }
+  @media ${device.mobileL} {
+    height: 40px;
+    width: 40px;
+    margin-top: 0.3em;
+    margin-left: -0.65em;
+    z-index: 22;
+    position: relative;
+    border-radius: 5px;
+    background-color: ${({ theme }) => theme.primary};
+  }
 `;
 
 export default function Logo() {
