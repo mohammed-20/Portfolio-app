@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { BgHome } from "../../images";
-
+import { device } from "../../responsive";
 export const Wrapper = styled.div`
   width: 100%;
   height: 100vh;
@@ -14,6 +14,9 @@ export const Wrapper = styled.div`
   position: absolute;
   overflow: hidden;
   right: 30px;
+  @media ${device.mobileL} {
+    right: 0;
+  }
 `;
 export const Overlay = styled.div`
   background-color: rgb(0, 0, 0, 0.65);
@@ -34,6 +37,9 @@ export const Content = styled.div`
   height: 14em;
   z-index: 1;
   margin: auto;
+  @media ${device.mobileL} {
+    padding-top: 30px;
+  }
 `;
 
 export const Line = styled.div`
@@ -42,6 +48,14 @@ export const Line = styled.div`
   background-size: 20px 100%;
   height: 1px;
   margin-left: 1.875em;
+  @media ${device.laptop} {
+    width: 83%;
+    margin-left: 2.9em;
+  }
+  @media ${device.mobileL} {
+    width: 90%;
+    margin-left: 1.5em;
+  }
 `;
 
 export const IconGroup = styled.div`

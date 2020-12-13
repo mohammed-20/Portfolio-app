@@ -2,12 +2,16 @@ import React from "react";
 import styled from "styled-components";
 import Progress from "../../Components/Progress";
 import DashLine from "../../Components/DashLine";
-// import PageTitle from "../../Components/PageTitle";
+import { device } from "../../responsive";
 import { Subtitle, PageHead1 } from "../../Components/Typography";
 const Wrapper = styled.section`
   padding-top: 7.5em;
   padding-bottom: 7.5em;
   display: flex;
+  @media ${device.mobileL} {
+    padding-bottom: 2em;
+    padding-top: 3em;
+  }
 `;
 const Content = styled.div`
   display: flex;
@@ -31,14 +35,19 @@ const TitlePage = styled.div`
   color: ${(props) => props.theme.titlespancolor};
   display: flex;
   justify-content: center;
+  @media ${device.mobileL} {
+    margin-left: 5em;
+  }
 `;
 const TitleSpan = styled.span`
   border-bottom: 3px dashed;
   padding-bottom: 0.625em;
   color: ${(props) => props.theme.primary};
-
   left: -11px;
   position: relative;
+  @media ${device.mobileL} {
+    padding-bottom: 0.2em;
+  }
 `;
 const HeadSpan = styled.span`
   position: absolute;
@@ -48,6 +57,12 @@ const HeadSpan = styled.span`
   font-size: 5rem;
   z-index: -1;
   color: ${(props) => props.theme.headSpancolor};
+  @media ${device.mobileL} {
+    right: -22px;
+    top: -15px;
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
 `;
 export default function Skills() {
   return (

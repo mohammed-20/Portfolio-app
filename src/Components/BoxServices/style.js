@@ -1,10 +1,13 @@
 import styled from "styled-components";
-
+import { device } from "../../responsive";
 export const Wrapper = styled.div`
   border: 3px dashed ${(props) => props.theme.backgroundprogress};
   text-align: center;
   padding: 20px;
   margin: 30px 30px;
+  @media ${device.mobileL} {
+    padding: 10px;
+  }
   &:hover {
     border-color: ${(props) => props.theme.primary};
   }
@@ -25,6 +28,16 @@ export const Content = styled.div`
     text-align: center;
     line-height: 1.5;
     color: ${(props) => props.theme.colorparagraph};
+    @media ${device.laptop} {
+      font-size: 1rem;
+      width: 70%;
+      margin: auto;
+    }
+    @media ${device.mobileL} {
+      font-size: 0.8rem;
+      width: 90%;
+      margin: auto;
+    }
   }
   .icon {
     border-bottom: 5px solid;
