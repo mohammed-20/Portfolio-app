@@ -73,7 +73,9 @@ export default function Slider() {
   //   el.removeEventListener("mousemove", handleMouseMove);
   // };
   const handleClick = (e) => {
-    setShow(e.target.id);
+    const { id } = e.target;
+    const newid = Number(id);
+    setShow(newid);
   };
 
   useEffect(() => {
