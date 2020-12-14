@@ -86,7 +86,7 @@ export default function Slider() {
           return newShow > 3 ? 1 : newShow;
         });
       }
-    }, 4000);
+    }, 5000);
     return () => clearInterval(interval);
   }, [show]);
 
@@ -112,17 +112,17 @@ export default function Slider() {
 
       <S.Dotes>
         <S.Doteitem
-          id="1"
+          id={1}
           onClick={handleClick}
           className={`${show === 1 ? "active" : ""}`}
         />
         <S.Doteitem
-          id="2"
+          id={2}
           onClick={handleClick}
           className={`${show === 2 ? "active" : ""}`}
         />
         <S.Doteitem
-          id="3"
+          id={3}
           onClick={handleClick}
           className={`${show === 3 ? "active" : ""}`}
         />
