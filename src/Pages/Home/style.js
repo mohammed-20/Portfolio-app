@@ -56,6 +56,10 @@ export const Line = styled.div`
     width: 90%;
     margin-left: 1.5em;
   }
+  @media ${device.mobileS} {
+    width: 88%;
+    margin-left: 1em;
+  }
 `;
 
 export const IconGroup = styled.div`

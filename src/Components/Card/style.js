@@ -9,7 +9,7 @@ export const DivCard = styled.section`
   @media ${device.mobileL} {
     flex-direction: column;
     margin-left: 3.5em;
-    width: 95%;
+    width: 97%;
     margin-top: -20px;
   }
 `;
@@ -36,15 +36,19 @@ export const DateCard = styled.div`
     line-height: 1.5;
     width: 6.875em;
     @media ${device.laptop} {
-      width: 30em;
+      width: 5em;
       font-size: 1.05rem;
     }
     @media ${device.mobileL} {
       width: 30em;
       font-size: 0.85rem;
-      padding: 1em 0 1em 0;
+      padding: 1em 0;
+    }
+    @media ${device.mobileM} {
+      width: 20em;
     }
   }
+
   position: relative;
   flex: 0 0 16%;
   max-width: 16.666667%;
@@ -84,6 +88,9 @@ export const Card = styled.div`
     @media ${device.mobileL} {
       font-size: 0.9rem;
     }
+    @media ${device.mobileM} {
+      font-size: 0.85rem;
+    }
   }
   .description {
     font-weight: 400;
@@ -92,6 +99,12 @@ export const Card = styled.div`
     color: ${(props) => props.theme.colorparagraph};
     @media ${device.mobileL} {
       font-size: 0.8rem;
+    }
+    @media ${device.mobileM} {
+      font-size: 0.75rem;
+    }
+    @media ${device.mobileS} {
+      font-size: 0.7rem;
     }
   }
   padding: 2.5em;

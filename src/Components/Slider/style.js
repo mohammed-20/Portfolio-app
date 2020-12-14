@@ -28,10 +28,16 @@ export const Slider = styled.div`
       transform: translateX(-1100px);
     }
     @media ${device.laptop} {
-      transform: translateX(-948px);
+      transform: translateX(-938px);
     }
     @media ${device.mobileL} {
-      transform: translateX(-731px);
+      transform: translateX(-725px);
+    }
+    @media ${device.mobileM} {
+      transform: translateX(-705px);
+    }
+    @media ${device.mobileS} {
+      transform: translateX(-685px);
     }
   }
   .show3 {
@@ -41,10 +47,16 @@ export const Slider = styled.div`
       transform: translateX(-2196px);
     }
     @media ${device.laptop} {
-      transform: translateX(-1887px);
+      transform: translateX(-1873px);
     }
     @media ${device.mobileL} {
       transform: translateX(-1448px);
+    }
+    @media ${device.mobileM} {
+      transform: translateX(-1405px);
+    }
+    @media ${device.mobileS} {
+      transform: translateX(-1365px);
     }
   }
 `;
@@ -72,6 +84,12 @@ export const Carousel = styled.div`
   @media ${device.mobileL} {
     margin-left: -25em;
   }
+  @media ${device.mobileM} {
+    margin-left: -26.3em;
+  }
+  @media ${device.mobileS} {
+    margin-left: -27.6em;
+  }
   .para {
     margin-top: 1.5em;
     margin-left: auto;
@@ -85,6 +103,12 @@ export const Carousel = styled.div`
       font-size: 12px;
       width: 28%;
       margin-left: -0.7em;
+      margin-right: 1.5em;
+    }
+    @media ${device.mobileM} {
+      font-size: 10px;
+      width: 20%;
+      margin-left: -0.3em;
       margin-right: 1.5em;
     }
   }
@@ -122,7 +146,7 @@ export const Dotes = styled.div`
   top: 30px;
   position: relative;
   @media ${device.mobileL} {
-    margin-left: 0.8em;
+    margin-left: 1.2em;
     top: 25px;
   }
   .active {

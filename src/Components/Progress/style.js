@@ -22,6 +22,14 @@ export const DivProgres = styled.div`
     height: 80%;
     margin-bottom: 1em;
   }
+  @media ${device.mobileM} {
+    width: 24em;
+    margin-left: 35px;
+  }
+  @media ${device.mobileS} {
+    width: 20em;
+    margin-left: 35px;
+  }
 `;
 export const Progres = styled.div`
   padding-left: 3.125em;
@@ -52,5 +60,9 @@ export const LabelProgress = styled.span`
   @media ${device.mobileL} {
     padding-left: 1em;
     font-size: 0.78rem;
+  }
+  @media ${device.mobileM} {
+    padding-left: 0.3em;
+    font-size: 0.72rem;
   }
 `;

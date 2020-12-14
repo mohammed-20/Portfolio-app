@@ -34,4 +34,9 @@ export const HeadSpan = styled.span`
     top: -13px;
     right: 55px;
   }
+  @media ${device.mobileS} {
+    font-size: 3rem;
+    top: -13px;
+    right: 20px;
+  }
 `;
