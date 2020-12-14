@@ -61,6 +61,15 @@ export const DivImg = styled.div`
     margin-top: -40px;
     margin-bottom: 50px;
   }
+  @media ${device.mobileM} {
+    margin-left: 35px;
+    margin-top: -45px;
+  }
+  @media ${device.mobileS} {
+    margin-left: 25px;
+    margin-top: -40px;
+    width: 23%;
+  }
 `;
 export const AboutImg = styled.img`
   max-height: 28.125em;
@@ -75,6 +84,10 @@ export const AboutImg = styled.img`
     margin-top: 15px;
     margin-bottom: -15px;
     margin-left: -15px;
+  }
+  @media ${device.mobileS} {
+    max-height: 20em;
+    margin-top: 17px;
   }
 `;
 

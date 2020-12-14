@@ -23,6 +23,12 @@ export const Nav = styled.div`
   @media ${device.mobileL} {
     margin-left: 4.5em;
   }
+  @media ${device.mobileM} {
+    margin-left: 3.5em;
+  }
+  @media ${device.mobileS} {
+    margin-left: 2em;
+  }
   .active {
     color: ${(props) => props.theme.primary};
   }

@@ -13,8 +13,8 @@ export const Wrapper = styled.main`
   background-size: cover;
   background-repeat: no-repeat;
   @media ${device.laptopL} {
-    height: 100vh;
-    background-position: -54px -30px;
+    height: 150vh;
+    background-position: -116px 0px;
   }
   @media ${device.mobileL} {
     background-position: -345px 0px;
@@ -56,6 +56,10 @@ export const TitlePage = styled.div`
     margin-left: 1em;
     margin-top: -4em;
   }
+  @media ${device.mobileS} {
+    margin-left: 0;
+    margin-top: -3em;
+  }
   .pagehead {
     font-size: 2.7rem;
     font-weight: 700;
@@ -64,6 +68,9 @@ export const TitlePage = styled.div`
     color: #e6e6e6;
     @media ${device.mobileL} {
       font-size: 2rem;
+    }
+    @media ${device.mobileS} {
+      font-size: 1.8rem;
     }
   }
 `;
@@ -75,6 +82,9 @@ export const TitleSpan = styled.span`
   margin-left: 0.3em;
   @media ${device.mobileL} {
     font-size: 2rem;
+  }
+  @media ${device.mobileS} {
+    font-size: 1.8rem;
   }
 `;
 
@@ -90,5 +100,10 @@ export const HeadSpan = styled.span`
     font-size: 3rem;
     top: -13px;
     right: -3px;
+  }
+  @media ${device.mobileS} {
+    font-size: 2rem;
+    top: -2px;
+    right: -9px;
   }
 `;

@@ -41,7 +41,6 @@ export default function Footer() {
       <IconGroup>
         <I.Facebook />
         <I.Twitter />
-        <I.UpWork className="upwork" />
         <I.UpWorkFooter />
         <I.Github />
         <I.LinkedIn />

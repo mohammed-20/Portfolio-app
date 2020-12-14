@@ -27,13 +27,14 @@ const Wrapper = styled.section`
     width: 102%;
   }
   @media ${device.mobileL} {
-    padding-top: 6em;
-    padding-bottom: 2em;
-    display: flex;
-    flex-direction: column;
-    margin-left: -5px;
     width: 132%;
     height: 130vh;
+  }
+  @media ${device.mobileM} {
+    width: 137%;
+  }
+  @media ${device.mobileS} {
+    width: 145%;
   }
 `;
 const Overlay = styled.div`
@@ -55,6 +56,9 @@ const Overlay = styled.div`
     width: 115%;
     height: 130vh;
     padding-bottom: 3em;
+  }
+  @media ${device.mobileM} {
+    padding-left: 2em;
   }
 `;
 

@@ -20,7 +20,7 @@ export const Container = styled.div`
   animation-fill-mode: both;
   animation-duration: 1s;
   animation-name: ${BounceInUp};
-  @media ${device.laptop} {
+  @media ${device.mobileL} {
     flex-direction: column;
   }
 `;
@@ -54,7 +54,7 @@ export const LeftSide = styled.div`
   .rowcontanct {
     display: flex;
     align-items: center;
-    @media ${device.laptop} {
+    @media ${device.mobileL} {
       flex-direction: column;
     }
     .concontact {
@@ -86,6 +86,10 @@ export const RightSide = styled.div`
   @media ${device.mobileL} {
     max-width: 100%;
   }
+  @media ${device.mobileM} {
+    max-width: 95%;
+    margin-left: 10px;
+  }
   .button {
     width: 95%;
     @media ${device.laptop} {
@@ -100,6 +104,12 @@ export const TitlePage = styled.div`
   color: ${(props) => props.theme.titlespancolor};
   @media ${device.mobileL} {
     margin-left: 6em;
+  }
+  @media ${device.mobileM} {
+    margin-left: 5em;
+  }
+  @media ${device.mobileS} {
+    margin-left: 3.5em;
   }
 `;
 export const TitleSpan = styled.span`
@@ -126,5 +136,10 @@ export const HeadSpan = styled.span`
     font-size: 3rem;
     top: -13px;
     left: 145px;
+  }
+  @media ${device.mobileM} {
+    font-size: 2.8rem;
+    top: -10px;
+    left: 155px;
   }
 `;

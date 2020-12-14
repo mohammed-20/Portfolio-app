@@ -104,6 +104,12 @@ export const H4 = styled.h4`
     font-size: 1.1rem;
     width: 20em;
   }
+  @media ${device.mobileM} {
+    font-size: 1rem;
+  }
+  @media ${device.mobileS} {
+    font-size: 0.9rem;
+  }
 `;
 export const Head4 = styled(H4)`
   color: ${(props) => props.theme.white};
@@ -139,6 +145,11 @@ export const P = styled.p`
   @media ${device.mobileL} {
     font-size: 1rem;
   }
+  @media ${device.mobileS} {
+    font-size: 1rem;
+    width: 85%;
+    margin-left: 1em;
+  }
 `;
 export const ParaPage = styled(P)`
   line-height: 2;
@@ -156,6 +167,13 @@ export const ParaPage = styled(P)`
     width: 32em;
     line-height: 1.5;
     font-size: 0.8rem;
+  }
+  @media ${device.mobileM} {
+    width: 28em;
+  }
+  @media ${device.mobileS} {
+    width: 22.2em;
+    margin-left: 5px;
   }
 `;
 export const Subtitle = styled.p`
@@ -175,5 +193,14 @@ export const Subtitle = styled.p`
     margin-left: 45px;
     margin-right: -4em;
     width: 100%;
+  }
+  @media ${device.mobileM} {
+    font-size: 0.75rem;
+    line-height: 1.5;
+    margin-left: 25px;
+  }
+  @media ${device.mobileS} {
+    font-size: 0.68rem;
+    margin-left: 60px;
   }
 `;

@@ -45,7 +45,7 @@ export const Container = styled.div`
       flex-direction: column;
       width: 95%;
     }
-    @media ${device.laptop} {
+    @media ${device.mobileL} {
       width: 95%;
       margin-left: 10em;
     }

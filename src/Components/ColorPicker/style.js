@@ -29,6 +29,11 @@ export const ColorBtn = styled.div`
     height: 42px;
     font-size: 1.4rem;
   }
+  @media ${device.mobileM} {
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+  }
 `;
 export const ColorLabel = styled.div`
   padding: 15px 15px 0px 15px;
