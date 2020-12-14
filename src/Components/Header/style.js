@@ -14,19 +14,6 @@ export const Wrapper = styled.nav`
   width: 7%;
   z-index: 20;
   transition: 0.3s;
-
-  .close {
-    left: 35px;
-    position: relative;
-    top: 40px;
-    z-index: 23;
-    font-size: 20px;
-    color: ${(props) => props.theme.fontColor};
-    display: none;
-    @media ${device.mobileL} {
-      display: block;
-    }
-  }
   @media ${device.laptopL} {
     width: 7%;
   }
@@ -41,6 +28,34 @@ export const Wrapper = styled.nav`
       content: "";
       position: absolute;
       right: 98px;
+      width: 350px;
+      height: 100%;
+      background:  rgb(0, 0, 0, 0.65);
+    }`
+        : `right: -100px;`}
+  }
+  @media ${device.mobileM} {
+    ${(props) =>
+      props.sideB
+        ? ` 
+      &::before {
+      content: "";
+      position: absolute;
+      right: 85px;
+      width: 350px;
+      height: 100%;
+      background:  rgb(0, 0, 0, 0.65);
+    }`
+        : ``}
+  }
+  @media ${device.mobileS} {
+    ${(props) =>
+      props.sideB
+        ? `right: 0; width:27%; 
+      &::before {
+      content: "";
+      position: absolute;
+      right: 86px;
       width: 350px;
       height: 100%;
       background:  rgb(0, 0, 0, 0.65);
@@ -118,4 +133,27 @@ export const Title = styled.p`
   ${NavItme}:hover & {
     display: block;
   }
+`;
+
+export const Close = styled.div`
+  display: none;
+  @media ${device.mobileL} {
+    display: block;
+  }
+  ${(props) =>
+    props.topclose
+      ? ` 
+  left: 30px;
+  position: relative;
+  top: 40px;
+  z-index: 23;
+  font-size: 20px;
+  color: ${(props) => props.theme.fontColor};`
+      : `
+ left: 25px;
+  position: relative;
+  top: 10px;
+  z-index: 23;
+  font-size: 20px;
+  color: ${(props) => props.theme.fontColor};`};
 `;

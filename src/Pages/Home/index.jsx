@@ -26,7 +26,7 @@ export default function Home() {
             <I.LinkedIn />
           </S.IconGroup>
         </S.Content>
-        <Header />
+        <Header topclose />
       </S.Overlay>
     </S.Wrapper>
   );

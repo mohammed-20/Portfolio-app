@@ -5,15 +5,16 @@ import Logo from "./Logo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimesCircle } from "@fortawesome/free-solid-svg-icons";
 import * as S from "./style";
-export default function Header() {
+
+export default function Header({ topclose }) {
   const [sidebar, setSidebar] = useState(false);
   const showSideBar = () => setSidebar(!sidebar);
   return (
     <>
       <S.Wrapper sideB={sidebar}>
-        <div className="close" onClick={showSideBar}>
+        <S.Close topclose={topclose} onClick={showSideBar}>
           <FontAwesomeIcon icon={faTimesCircle} />
-        </div>
+        </S.Close>
         <Logo />
         <NavBar />
       </S.Wrapper>
