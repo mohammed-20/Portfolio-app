@@ -164,15 +164,15 @@ export const ParaPage = styled(P)`
     line-height: 1.8;
   }
   @media ${device.mobileL} {
-    width: 32em;
+    width: 42%;
     line-height: 1.5;
     font-size: 0.8rem;
   }
   @media ${device.mobileM} {
-    width: 28em;
+    width: 38%;
   }
   @media ${device.mobileS} {
-    width: 22.2em;
+    width: 33%;
     margin-left: 5px;
   }
 `;
