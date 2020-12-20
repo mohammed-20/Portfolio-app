@@ -42,7 +42,7 @@ const portfolio = [
     id: 4,
     img: cunter,
     filter: ["all", "react"],
-    title: "cunter",
+    title: "counter",
     subtitle: "Category",
     link: "https://appcounter.netlify.app",
   },
@@ -116,13 +116,13 @@ export default function Gallery() {
           onClick={() => setActive("react")}
           className={`${active === "react" ? "active" : ""}`}
         >
-          Photos
+          React
         </G.NavItem>
         <G.NavItem
           onClick={() => setActive("js")}
           className={`${active === "js" ? "active" : ""}`}
         >
-          Videos
+          Js
         </G.NavItem>
       </G.Nav>
       <G.Picture>
