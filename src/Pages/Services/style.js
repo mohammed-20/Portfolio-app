@@ -30,8 +30,8 @@ export const Container = styled.div`
   animation-duration: 1s;
   animation-name: ${BounceInUp};
   @media ${device.mobileL} {
-    padding-right: 0em;
-    padding-left: 0em;
+    padding-right: 0;
+    padding-left: 0;
     margin-right: 80px;
     margin-left: -24px;
   }
@@ -58,8 +58,8 @@ export const LeftBox = styled.div`
     margin-left: -33px;
   }
   @media ${device.mobileL} {
-    width: 109%;
-    margin-left: -35px;
+    width: 93.5%;
+    margin-left: 0.03em;
   }
 `;
 export const CentertBox = styled.div`
@@ -71,6 +71,10 @@ export const CentertBox = styled.div`
   @media ${device.laptop} {
     width: 95%;
     margin: 0.3em -7px;
+  }
+  @media ${device.mobileL} {
+    width: 93.5%;
+    margin-left: 0.03em;
   }
   .title-do {
     font-weight: 700;
@@ -108,7 +112,7 @@ export const RightBox = styled.div`
     margin-left: -33px;
   }
   @media ${device.mobileL} {
-    width: 109%;
-    margin-left: -35px;
+    width: 93.5%;
+    margin-left: 0.03em;
   }
 `;

@@ -30,8 +30,6 @@ export const Container = styled.div`
   animation-duration: 1s;
   animation-name: ${BounceInUp};
   @media ${device.mobileL} {
-    padding-right: 0em;
-    padding-left: 0em;
     margin-right: 80px;
     margin-left: -24px;
   }
@@ -57,10 +55,14 @@ export const TableTitle = styled.ul`
   width: 85%;
   margin-left: -5.3125em;
   @media ${device.laptopL} {
-    width: 80.5%;
+    width: 84.3%;
   }
   @media ${device.laptop} {
     width: 89%;
+  }
+  @media ${device.tablet} {
+    width: 74%;
+    margin-left: -4em;
   }
   @media ${device.mobileL} {
     width: 92%;
@@ -103,17 +105,31 @@ export const TableItem = styled.a`
 `;
 
 export const ExperienceContent = styled.div`
+  width: 85%;
   margin: auto;
+  display: block;
+  margin-left: 4.2em;
   @media ${device.laptop} {
-    width: 93%;
+    width: 88%;
+    margin-left: 1.9em;
+  }
+  @media ${device.mobileL} {
+    width: 90%;
   }
   ${(props) =>
     props.displayed === "experience" ? `display:block;` : "display:none; "};
 `;
 export const EducationContent = styled.div`
+  width: 85%;
   margin: auto;
+  display: block;
+  margin-left: 4.2em;
   @media ${device.laptop} {
-    width: 93%;
+    width: 88%;
+    margin-left: 1.9em;
+  }
+  @media ${device.mobileL} {
+    width: 90%;
   }
   ${(props) =>
     props.displayed === "education" ? "display:block;" : "display:none;"};
