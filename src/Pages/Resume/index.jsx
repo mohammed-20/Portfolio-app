@@ -45,39 +45,39 @@ export default function Resume() {
             dateparagraph="January 2019 to Present"
             titleCard="Website Developer"
             subtitlecard="ABC Company"
-            descriptioncard="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+            descriptioncard=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            tenetur ratione quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            tenetur ratione quod."
           />
           <Card
             dateparagraph="February 2018 to 2019"
             titleCard="Website Designer"
             subtitlecard="ABC Company"
-            descriptioncard="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+            descriptioncard=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            tenetur ratione quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            tenetur ratione quod."
           />
           <Card
             dateparagraph="January 2016 to 2018"
             titleCard="UI Developer"
             subtitlecard="ABC Company"
-            descriptioncard="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+            descriptioncard=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            tenetur ratione quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            tenetur ratione quod."
           />
         </S.ExperienceContent>
         <S.EducationContent displayed={state} className="fade">
           <Card
-            dateparagraph="January 2014 to 2016"
-            titleCard="M.Sc Computer Science"
-            subtitlecard="XYZ University"
-            descriptioncard="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+            dateparagraph="January 2014 to 2019"
+            titleCard="B.Sc Civil engineering"
+            subtitlecard="IUG University"
+            descriptioncard="Faculty of Engineering at Islamic University of Gaza (IUG), Gaza, Palestine. Good general grade."
           />
           <Card
-            dateparagraph="January 2010 to 2014"
-            titleCard="B.Sc Computer Sciencer"
-            subtitlecard="XYZ University"
-            descriptioncard="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-          />
-          <Card
-            dateparagraph="January 2008 to 2010"
+            dateparagraph="june 2012 to 2014"
             titleCard="Higher School Graduation"
-            subtitlecard="XYZ College"
-            descriptioncard="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+            subtitlecard="Al Taqwa School"
+            descriptioncard="Al Taqwa school, Gaza, Palestine Honor's Degree with GPA 83%."
           />
         </S.EducationContent>
       </S.Container>

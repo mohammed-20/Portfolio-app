@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
   margin: 30px 30px;
   @media ${device.mobileL} {
     padding: 10px;
+    margin: 30px auto;
   }
   &:hover {
     border-color: ${(props) => props.theme.primary};
@@ -35,7 +36,7 @@ export const Content = styled.div`
     }
     @media ${device.mobileL} {
       font-size: 0.8rem;
-      width: 90%;
+      width: 100%;
       margin: auto;
     }
   }

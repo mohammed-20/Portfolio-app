@@ -6,10 +6,15 @@ export const DivCard = styled.section`
   width: 100%;
   flex-wrap: wrap;
   margin-right: -4.5em;
-  @media ${device.mobileL} {
+  @media ${device.tablet} {
     flex-direction: column;
-    margin-left: 3.5em;
-    width: 97%;
+    margin-left: 2.5em;
+    width: 100%;
+    margin-top: -20px;
+  }
+  @media ${device.mobileL} {
+    margin-left: 2.5em;
+    width: 100%;
     margin-top: -20px;
   }
 `;
@@ -23,7 +28,7 @@ export const DateCard = styled.div`
     height: 1.875em;
     border-radius: 50%;
     background-color: ${(props) => props.theme.primary};
-    @media ${device.mobileL} {
+    @media ${device.tablet} {
       display: none;
     }
   }
@@ -34,18 +39,17 @@ export const DateCard = styled.div`
     color: ${(props) => props.theme.colorparagraph};
     font-size: 1.05rem;
     line-height: 1.5;
-    width: 6.875em;
+    width: 70%;
     @media ${device.laptop} {
-      width: 5em;
       font-size: 1.05rem;
     }
-    @media ${device.mobileL} {
-      width: 30em;
-      font-size: 0.85rem;
+    @media ${device.tablet} {
+      width: 100%;
+      font-size: 1.05rem;
       padding: 1em 0;
     }
-    @media ${device.mobileM} {
-      width: 20em;
+    @media ${device.mobileL} {
+      font-size: 0.85rem;
     }
   }
 
@@ -54,6 +58,11 @@ export const DateCard = styled.div`
   max-width: 16.666667%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  @media ${device.tablet} {
+    font-size: 1.05rem;
+    max-width: 83%;
+    font-size: 1.05rem;
+  }
   &::after {
     content: "";
     position: absolute;
@@ -62,7 +71,7 @@ export const DateCard = styled.div`
     width: 3px;
     height: 100%;
     background-color: ${(props) => props.theme.primary};
-    @media ${device.mobileL} {
+    @media ${device.tablet} {
       display: none;
     }
   }
@@ -111,7 +120,7 @@ export const Card = styled.div`
   position: relative;
   margin: 0 0 30px 0;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  width: 77.3%;
+  width: 83.3%;
   border-right: 3px solid ${(props) => props.theme.primary};
   background-color: ${(props) => props.theme.backgroundLabel};
   @media ${device.mobileL} {
