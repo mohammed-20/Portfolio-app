@@ -20,6 +20,9 @@ export const Wrapper = styled.nav`
   @media ${device.laptop} {
     width: 9%;
   }
+  @media ${device.tablet} {
+    width: 11%;
+  }
   @media ${device.mobileL} {
     ${(props) =>
       props.sideB

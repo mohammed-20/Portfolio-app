@@ -15,8 +15,6 @@ const Wrapper = styled.section`
   background-image: url(${Banner});
   background-size: cover;
   background-position: center;
-  padding-top: 7.5em;
-  padding-bottom: 7.5em;
 
   display: block;
   position: relative;
@@ -26,34 +24,29 @@ const Wrapper = styled.section`
   @media ${device.laptop} {
     width: 102%;
   }
+  @media ${device.tablet} {
+    width: 100%;
+  }
   @media ${device.mobileL} {
-    width: 132%;
     height: 130vh;
-  }
-  @media ${device.mobileM} {
-    width: 137%;
-  }
-  @media ${device.mobileS} {
-    width: 145%;
   }
 `;
 const Overlay = styled.div`
   background-color: rgb(0, 0, 0, 0.7);
   position: absolute;
   height: 60vh;
-  width: 101%;
+  width: 100%;
   z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   top: 0;
   padding-left: 3em;
+
   @media ${device.mobileL} {
     display: flex;
     flex-direction: column;
-    margin-left: -7px;
-    padding-left: 1em;
-    width: 115%;
+    width: 100%;
     height: 130vh;
     padding-bottom: 3em;
   }
@@ -72,6 +65,10 @@ const Future = styled.div`
     margin-right: 7em;
     margin-left: 2em;
     font-size: 10px;
+  }
+  @media ${device.tablet} {
+    margin-right: 5em;
+    margin-left: 0;
   }
   @media ${device.mobileL} {
     margin-top: 5em;

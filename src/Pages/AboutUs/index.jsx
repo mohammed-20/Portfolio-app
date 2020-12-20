@@ -26,19 +26,16 @@ export default function AboutUs() {
               </T.PageHead1>
             </S.TitlePage>
 
-            <T.H4>I am Mohammed, Web Designer &amp; Web Developer </T.H4>
+            <T.H4>Front-End developer</T.H4>
             <T.ParaPage>
-              I am a web developer and Web Developer living in California, Gaza.
-              I spend my days with my hands in many different areas of web
-              development from back end programming to front end engineering. I
-              can provide clean code and pixel perfect design. I also make
-              website more &amp; more interactive with web animations. I am a
-              passionate with my work who loves simplicity in things and crafts
-              beautiful user interfaces with love.
+              Mohammed Naim from Palestine. Working on different projects since
+              2017. I am familiar with creating flexible and perfect pixels UI
+              websites by using React Js. I also enjoy fixing the bugs while
+              coding the application. Don't hesitate to contact me if you need
+              to help.
             </T.ParaPage>
             <S.DivBtn>
               <Button>Download Resume</Button>
-              <Button>Hire me</Button>
             </S.DivBtn>
           </S.Describtion>
         </S.Content1>
