@@ -10,15 +10,21 @@ export const Wrapper = styled.div`
 `;
 
 export const Main = styled.main`
-  margin-right: 6.25em;
+  width: 93%;
   transition: 0.3s;
   animation-fill-mode: both;
   animation-duration: 1s;
   animation-name: ${BounceInUp};
+  @media ${device.tablet} {
+    width: 89%;
+  }
+  @media ${device.mobileL} {
+    width: 100%;
+  }
 `;
 export const Content1 = styled.section`
   padding: 8em 0;
-  width: 70em;
+  width: 85%;
   margin-right: auto;
   margin-left: 7em;
   display: flex;
@@ -28,7 +34,7 @@ export const Content1 = styled.section`
   }
 
   @media ${device.laptop} {
-    width: 60em;
+    width: 95%;
     margin-left: 2.5em;
   }
   @media ${device.mobileL} {
@@ -53,10 +59,10 @@ export const Describtion = styled.div`
 export const DivImg = styled.div`
   border: 4px dashed ${(props) => props.theme.primary};
   @media ${device.laptop} {
-    width: 33%;
+    width: 15em;
   }
   @media ${device.mobileL} {
-    width: 24%;
+    width: 14em;
     margin-left: 60px;
     margin-top: -40px;
     margin-bottom: 50px;
@@ -68,15 +74,18 @@ export const DivImg = styled.div`
   @media ${device.mobileS} {
     margin-left: 25px;
     margin-top: -40px;
-    width: 23%;
+    width: 13.6em;
   }
 `;
 export const AboutImg = styled.img`
   max-height: 28.125em;
   margin: 0.93em 1em -0.93em -0.93em;
   @media ${device.laptop} {
-    max-height: 21.875em;
+    max-height: 19em;
     margin: 0.93em 1em -0.93em -0.93em;
+  }
+  @media ${device.tablet} {
+    margin: 0.93em 1em -0.93em -1.7em;
   }
   @media ${device.mobileL} {
     max-height: 20.5em;
@@ -115,7 +124,7 @@ export const TitlePage = styled.div`
 `;
 export const TitleSpan = styled.span`
   border-bottom: 3px dashed;
-  padding-bottom: 0.625em;
+  padding-bottom: 0.3em;
   color: ${(props) => props.theme.primary};
   padding-right: 0.625em;
   @media ${device.laptop} {

@@ -16,7 +16,7 @@ export const Icon = styled.a`
     font-size: 12px;
   }
 `;
-export const PlusIcon = styled.a`
+export const PlusIcon = styled.span`
   cursor: pointer;
   &:hover {
     color: ${(props) => props.theme.colorhover};

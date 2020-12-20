@@ -3,12 +3,12 @@ import styled from "styled-components";
 import Progress from "../../Components/Progress";
 import DashLine from "../../Components/DashLine";
 import { device } from "../../responsive";
-import { Subtitle, PageHead1 } from "../../Components/Typography";
+import { PageHead1 } from "../../Components/Typography";
 const Wrapper = styled.section`
   padding-top: 7.5em;
   padding-bottom: 7.5em;
   display: flex;
-  @media ${device.mobileL} {
+  @media ${device.laptop} {
     padding-bottom: 2em;
     padding-top: 3em;
   }
@@ -25,9 +25,22 @@ const Content = styled.div`
   margin-top: 2.5em;
 `;
 const ContenrProgress = styled.div`
-  margin-top: 2em;
-  margin-left: 2em;
+  width: 60%;
+  margin: 4em auto;
+  @media ${device.laptopL} {
+    width: 60%;
+  }
+  @media ${device.laptop} {
+    width: 85%;
+  }
+  @media ${device.tablet} {
+    width: 90%;
+  }
+  @media ${device.mobileL} {
+    width: 85%;
+  }
 `;
+
 const TitlePage = styled.div`
   margin-bottom: 1.875em;
   position: relative;
@@ -41,7 +54,7 @@ const TitlePage = styled.div`
 `;
 const TitleSpan = styled.span`
   border-bottom: 3px dashed;
-  padding-bottom: 0.625em;
+  padding-bottom: 0.3em;
   color: ${(props) => props.theme.primary};
   left: -11px;
   position: relative;
@@ -76,10 +89,6 @@ export default function Skills() {
             Skills
           </PageHead1>
         </TitlePage>
-        <Subtitle>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur
-          ratione quod.
-        </Subtitle>
         <ContenrProgress>
           <Progress style={{ width: "95%" }} TextLabel="95%">
             Html

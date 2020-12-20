@@ -102,7 +102,7 @@ export const H4 = styled.h4`
   }
   @media ${device.mobileL} {
     font-size: 1.1rem;
-    width: 20em;
+    width: 18em;
   }
   @media ${device.mobileM} {
     font-size: 1rem;
@@ -154,26 +154,23 @@ export const P = styled.p`
 export const ParaPage = styled(P)`
   line-height: 2;
   font-size: 1rem;
-  width: 47em;
+  width: 100%;
   animation-name: none;
   margin-bottom: 20px;
   font-weight: 400;
   color: ${(props) => props.theme.colorparagraph};
   @media ${device.laptop} {
-    width: 39em;
-    line-height: 1.8;
+    width: 90%;
+    line-height: 2;
+  }
+  @media ${device.tablet} {
+    width: 100%;
+    line-height: 1.5;
   }
   @media ${device.mobileL} {
-    width: 42%;
+    width: 100%;
     line-height: 1.5;
-    font-size: 0.8rem;
-  }
-  @media ${device.mobileM} {
-    width: 38%;
-  }
-  @media ${device.mobileS} {
-    width: 33%;
-    margin-left: 5px;
+    font-size: 1rem;
   }
 `;
 export const Subtitle = styled.p`
@@ -187,6 +184,11 @@ export const Subtitle = styled.p`
   color: ${(props) => props.theme.colorparagraph};
   @media ${device.laptop} {
     margin-right: 1em;
+  }
+  @media ${device.tablet} {
+    margin-right: auto;
+    width: 90%;
+    margin-bottom: 0;
   }
   @media ${device.mobileL} {
     font-size: 0.85rem;

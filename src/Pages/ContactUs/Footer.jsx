@@ -46,7 +46,7 @@ export default function Footer() {
         <I.LinkedIn />
       </IconGroup>
       <p className="copyright">
-        Copyright @ 2019 Cortex. All Rights Reserved Designed By Kiswa Solutions
+        Copyright @ 2020 Mohammed. All Rights Reserved Designed By Mohammed Naim
       </p>
     </Contanier>
   );

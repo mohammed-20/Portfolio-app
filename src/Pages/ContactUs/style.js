@@ -85,6 +85,7 @@ export const RightSide = styled.div`
   }
   @media ${device.mobileL} {
     max-width: 100%;
+    margin-left: 1em;
   }
   @media ${device.mobileM} {
     max-width: 95%;
