@@ -1,57 +1,90 @@
 import React, { useState } from "react";
-import { Gallery2, Blog1, Blog2, Blog3 } from "../../images";
+import {
+  cunter,
+  calculator,
+  signuphook,
+  praxis,
+  crowdme,
+  greatidea,
+  stopwhatch,
+  signupclass,
+  movies,
+} from "../../images";
 import { Plus } from "../../Components/Icons";
 import * as G from "./stylegallery";
 
 const portfolio = [
   {
     id: 1,
-    img: Blog1,
-    filter: ["all", "design"],
-    title: "Project title",
+    img: signuphook,
+    filter: ["all", "react", "brand"],
+    title: "signin",
     subtitle: "Category",
+    link: "https://digitalsignin.netlify.app",
   },
   {
     id: 2,
-    img: Blog3,
-    filter: ["all", "brand"],
-    title: "Project title",
+    img: crowdme,
+    filter: ["all", "brand", "design", "js"],
+    title: "crowdme",
     subtitle: "Category",
+    link: "https://mohammed-20.github.io/my-project/",
   },
   {
     id: 3,
-    img: Blog2,
-    filter: ["all", "photos", "videos"],
-    title: "Project title",
+    img: praxis,
+    filter: ["all", "design"],
+    title: "praxis",
     subtitle: "Category",
+    link: "https://mohammed-20.github.io/naimdesign/",
   },
   {
     id: 4,
-    img: Gallery2,
-    filter: ["all", "videos", "design"],
-    title: "Project title",
+    img: cunter,
+    filter: ["all", "react"],
+    title: "cunter",
     subtitle: "Category",
+    link: "https://appcounter.netlify.app",
   },
   {
     id: 5,
-    img: Blog2,
-    filter: ["all", "videos", "photos", "design"],
-    title: "Project title",
+    img: greatidea,
+    filter: ["all", "js", "design"],
+    title: "greatidea",
     subtitle: "Category",
+    link: "https://mohammed-20.github.io/assignment-js/",
   },
   {
     id: 6,
-    img: Gallery2,
-    filter: ["all", "photos"],
-    title: "Project title",
+    img: calculator,
+    filter: ["all", "react"],
+    title: "calculator",
     subtitle: "Category",
+    link: "https://app-calculator.netlify.app",
   },
   {
     id: 7,
-    img: Blog1,
-    filter: ["all", "photos", "videos", "design"],
-    title: "Project title",
+    img: stopwhatch,
+    filter: ["all", "js", "design"],
+    title: "stopwhatch",
     subtitle: "Category",
+    link: "https://mohammed-20.github.io/stopWatch/",
+  },
+  {
+    id: 8,
+    img: signupclass,
+    filter: ["all", "react", "brand"],
+    title: "signup",
+    subtitle: "Category",
+    link: "https://signingamer.netlify.app",
+  },
+  {
+    id: 9,
+    img: movies,
+    filter: ["all", "js"],
+    title: "movies",
+    subtitle: "Category",
+    link: "https://mohammed-20.github.io/Api-Mohammed/",
   },
 ];
 
@@ -80,14 +113,14 @@ export default function Gallery() {
           Design
         </G.NavItem>
         <G.NavItem
-          onClick={() => setActive("photos")}
-          className={`${active === "photos" ? "active" : ""}`}
+          onClick={() => setActive("react")}
+          className={`${active === "react" ? "active" : ""}`}
         >
           Photos
         </G.NavItem>
         <G.NavItem
-          onClick={() => setActive("videos")}
-          className={`${active === "videos" ? "active" : ""}`}
+          onClick={() => setActive("js")}
+          className={`${active === "js" ? "active" : ""}`}
         >
           Videos
         </G.NavItem>
@@ -104,7 +137,9 @@ export default function Gallery() {
             <G.Overlay>
               <h3 className="project-title">{item.title}</h3>
               <h6 className="project-subtitle">{item.subtitle}</h6>
-              <Plus className="plus" />
+              <a href={item.link}>
+                <Plus className="plus" />
+              </a>
             </G.Overlay>
           </G.DivImg>
         ))}

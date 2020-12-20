@@ -42,7 +42,7 @@ export const UpWork = () => {
 };
 export const UpWorkFooter = () => {
   return (
-    <S.Icon>
+    <S.Icon href="https://www.upwork.com">
       <UpworkFooter />
     </S.Icon>
   );
