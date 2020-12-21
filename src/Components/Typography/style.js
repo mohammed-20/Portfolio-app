@@ -96,6 +96,7 @@ export const H4 = styled.h4`
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 1.2;
+  margin: 15px 0;
   color: ${(props) => props.theme.textblack};
   @media ${device.laptop} {
     font-size: 1.26rem;
@@ -156,7 +157,7 @@ export const ParaPage = styled(P)`
   font-size: 1rem;
   width: 100%;
   animation-name: none;
-  margin-bottom: 20px;
+  margin-bottom: 45px;
   font-weight: 400;
   color: ${(props) => props.theme.colorparagraph};
   @media ${device.laptop} {

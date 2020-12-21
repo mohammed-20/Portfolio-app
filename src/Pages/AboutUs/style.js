@@ -81,7 +81,7 @@ export const AboutImg = styled.img`
   max-height: 28.125em;
   margin: 0.93em 1em -0.93em -0.93em;
   @media ${device.laptop} {
-    max-height: 19em;
+    max-height: 22em;
     margin: 0.93em 1em -0.93em -0.93em;
   }
   @media ${device.tablet} {
