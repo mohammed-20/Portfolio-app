@@ -39,7 +39,7 @@ export const DateCard = styled.div`
     color: ${(props) => props.theme.colorparagraph};
     font-size: 1.05rem;
     line-height: 1.5;
-    width: 70%;
+    width: 65%;
     @media ${device.laptop} {
       font-size: 1.05rem;
     }
