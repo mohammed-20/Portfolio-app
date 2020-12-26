@@ -8,6 +8,9 @@ export const TitlePage = styled.div`
   display: flex;
   justify-content: center;
   margin-left: 2.75em;
+  @media ${device.tabletM} {
+    margin-left: 7em;
+  }
   @media ${device.mobileL} {
     margin-left: 13em;
     margin-top: -4em;

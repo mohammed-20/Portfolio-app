@@ -24,7 +24,7 @@ const Button = styled.span`
     border: 30px solid transparent;
     border-top-color: ${(props) => props.theme.primary};
   }
-  @media ${device.mobileL} {
+  @media ${device.tabletM} {
     ${(props) => (props.btnSide ? "display:none" : "display:block")};
   }
 `;

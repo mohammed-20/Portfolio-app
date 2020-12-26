@@ -18,7 +18,7 @@ export const Main = styled.main`
   @media ${device.tablet} {
     width: 89%;
   }
-  @media ${device.mobileL} {
+  @media ${device.tabletM} {
     width: 100%;
   }
 `;
@@ -37,7 +37,7 @@ export const Content1 = styled.section`
     width: 95%;
     margin-left: 2.5em;
   }
-  @media ${device.mobileL} {
+  @media ${device.tabletM} {
     display: flex;
     flex-direction: column;
   }
@@ -58,8 +58,13 @@ export const Describtion = styled.div`
 `;
 export const DivImg = styled.div`
   border: 4px dashed ${(props) => props.theme.primary};
+
   @media ${device.laptop} {
     width: 15em;
+  }
+  @media ${device.tabletM} {
+    margin: 0 auto;
+    margin-bottom: 5em;
   }
   @media ${device.mobileL} {
     width: 14em;

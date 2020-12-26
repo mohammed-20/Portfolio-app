@@ -17,10 +17,8 @@ export const Wrapper = styled.main`
 `;
 export const Container = styled.div`
   padding-right: 0.9375em;
-  width: 100%;
-  padding-left: 0.9375em;
-  margin-right: auto;
-  margin-left: auto;
+  width: 90%;
+  margin: 0 auto;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -37,9 +35,7 @@ export const Container = styled.div`
   }
   .content {
     display: flex;
-    width: 90%;
-    margin-right: 2.5em;
-    width: 92%;
+    width: 100%;
     margin-right: 2em;
     @media ${device.laptop} {
       flex-direction: column;
@@ -54,8 +50,8 @@ export const Container = styled.div`
 export const LeftBox = styled.div`
   width: 33%;
   @media ${device.laptop} {
-    width: 101%;
-    margin-left: -33px;
+    width: 100%;
+    margin-left: -15px;
   }
   @media ${device.mobileL} {
     width: 93.5%;
@@ -67,10 +63,10 @@ export const CentertBox = styled.div`
   text-align: center;
   padding: 1.25em;
   margin: 1.875em 0;
-  width: 30%;
+  width: 33%;
   @media ${device.laptop} {
-    width: 95%;
-    margin: 0.3em -7px;
+    width: 91%;
+    margin: 0.3em 15px;
   }
   @media ${device.mobileL} {
     width: 93.5%;
@@ -108,8 +104,8 @@ export const CentertBox = styled.div`
 export const RightBox = styled.div`
   width: 33%;
   @media ${device.laptop} {
-    width: 101%;
-    margin-left: -33px;
+    width: 100%;
+    margin-left: -15px;
   }
   @media ${device.mobileL} {
     width: 93.5%;

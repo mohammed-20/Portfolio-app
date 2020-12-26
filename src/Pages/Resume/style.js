@@ -64,6 +64,14 @@ export const TableTitle = styled.ul`
     width: 74%;
     margin-left: -4em;
   }
+  @media ${device.tabletM} {
+    width: 75%;
+    margin-left: -2em;
+  }
+  @media ${device.tabletS} {
+    width: 75%;
+    margin-left: 1em;
+  }
   @media ${device.mobileL} {
     width: 92%;
     margin-left: 6em;

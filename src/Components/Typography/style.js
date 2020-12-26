@@ -62,7 +62,7 @@ export const H2 = styled.h2`
   font-size: 2.2rem;
   line-height: 1.2;
   padding-right: 0.8em;
-  @media ${device.mobileL} {
+  @media ${device.tabletM} {
     display: none;
   }
 
@@ -165,7 +165,6 @@ export const ParaPage = styled(P)`
     line-height: 2;
   }
   @media ${device.tablet} {
-    width: 100%;
     line-height: 1.5;
   }
   @media ${device.mobileL} {
@@ -190,6 +189,9 @@ export const Subtitle = styled.p`
     margin-right: auto;
     width: 90%;
     margin-bottom: 0;
+  }
+  @media ${device.tabletM} {
+    width: 98%;
   }
   @media ${device.mobileL} {
     font-size: 0.85rem;
