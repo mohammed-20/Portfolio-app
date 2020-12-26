@@ -13,10 +13,6 @@ export const Wrapper = styled.div`
   background-size: cover;
   position: absolute;
   overflow: hidden;
-  right: 30px;
-  @media ${device.mobileL} {
-    right: 0;
-  }
 `;
 export const Overlay = styled.div`
   background-color: rgb(0, 0, 0, 0.65);
