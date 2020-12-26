@@ -18,7 +18,7 @@ const Contanier = styled.div`
     text-align: center;
     width: 30%;
     margin-left: 2em;
-    @media ${device.mobileL} {
+    @media ${device.tablet} {
       font-size: 14px;
       width: 80%;
       letter-spacing: 1px;
@@ -29,7 +29,7 @@ const IconGroup = styled.div`
   color: ${(props) => props.theme.fontfooter};
   display: flex;
   justify-content: center;
-  @media ${device.mobileL} {
+  @media ${device.tablet} {
     font-size: 10px;
     margin-top: -3em;
   }

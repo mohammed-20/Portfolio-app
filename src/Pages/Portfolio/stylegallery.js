@@ -9,16 +9,19 @@ export const Content = styled.div`
   margin-top: 2.5em;
 `;
 export const Nav = styled.div`
-  margin: auto;
-  width: 40%;
+  margin-right: 4em;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   z-index: 0;
-  margin-left: 19em;
+
   cursor: pointer;
   @media ${device.laptop} {
     width: 50%;
     margin-left: 11em;
+  }
+  @media ${device.tablet} {
+    width: 65%;
+    margin-left: 5em;
   }
   @media ${device.mobileL} {
     margin-left: 4.5em;
@@ -36,6 +39,7 @@ export const Nav = styled.div`
 export const NavItem = styled.span`
   border-left: 2px solid ${(props) => props.theme.colorparagraph};
   padding-left: 25px;
+  padding-right: 25px;
   line-height: 1.5;
   font-weight: 500;
   z-index: 0;
@@ -53,7 +57,7 @@ export const NavItem = styled.span`
   }
   &:first-child {
     border-left: none;
-    padding-right: 1.4em;
+    padding-right: 45px;
     &:hover {
       color: ${(props) => props.theme.primary};
     }
@@ -66,6 +70,11 @@ export const Picture = styled.div`
   padding-right: 20px;
   display: flex;
   flex-wrap: wrap;
+  @media ${device.tablet} {
+    flex-direction: column;
+    margin-left: 1em;
+    width: 225vw;
+  }
   @media ${device.mobileL} {
     flex-direction: column;
     margin-left: 2.5em;

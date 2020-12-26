@@ -7,7 +7,7 @@ export const Wrapper = styled.main`
   z-index: -2;
   transition: 0.3s;
   background-color: ${(props) => props.theme.backgroundContact};
-  @media ${device.mobileL} {
+  @media ${device.tablet} {
     padding-top: 2.4375em;
   }
 `;
@@ -20,7 +20,7 @@ export const Container = styled.div`
   animation-fill-mode: both;
   animation-duration: 1s;
   animation-name: ${BounceInUp};
-  @media ${device.mobileL} {
+  @media ${device.tablet} {
     flex-direction: column;
   }
 `;
@@ -32,7 +32,7 @@ export const LeftSide = styled.div`
   @media ${device.laptop} {
     padding-left: 1em;
   }
-  @media ${device.mobileL} {
+  @media ${device.tablet} {
     max-width: 100%;
   }
   .feel {
@@ -83,7 +83,7 @@ export const RightSide = styled.div`
     flex: 0 0 44.5%;
     max-width: 44.5%;
   }
-  @media ${device.mobileL} {
+  @media ${device.tablet} {
     max-width: 100%;
     margin-left: 1em;
   }

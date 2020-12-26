@@ -104,7 +104,7 @@ export default function Gallery() {
           onClick={() => setActive("brand")}
           className={`${active === "brand" ? "active" : ""}`}
         >
-          Brand
+          Common
         </G.NavItem>
         <G.NavItem
           onClick={() => setActive("design")}

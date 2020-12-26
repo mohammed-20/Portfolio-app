@@ -3,7 +3,7 @@ import { BounceInUp } from "../../animation";
 import { device } from "../../responsive";
 export const Wrapper = styled.main`
   width: 100%;
-  height: 185vh;
+  height: 100%;
   padding-top: 7.5em;
   padding-bottom: 7.5em;
   display: flex;
@@ -15,7 +15,6 @@ export const Wrapper = styled.main`
   overflow: hidden;
   @media ${device.mobileL} {
     padding-bottom: 3em;
-    height: 100%;
   }
 `;
 

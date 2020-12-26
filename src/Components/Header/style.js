@@ -23,6 +23,23 @@ export const Wrapper = styled.nav`
   @media ${device.tablet} {
     width: 11%;
   }
+  @media ${device.tabletM} {
+    width: 10%;
+  }
+  @media ${device.tabletM} {
+    ${(props) =>
+      props.sideB
+        ? `right: 0; width:15%; 
+      &::before {
+      content: "";
+      position: absolute;
+      right: 96px;
+      width: 85vw;
+      height: 100%;
+      background:  rgb(0, 0, 0, 0.65);
+    }`
+        : `right: -100px;`}
+  }
   @media ${device.mobileL} {
     ${(props) =>
       props.sideB
@@ -140,7 +157,7 @@ export const Title = styled.p`
 
 export const Close = styled.div`
   display: none;
-  @media ${device.mobileL} {
+  @media ${device.tabletM} {
     display: block;
   }
   ${(props) =>

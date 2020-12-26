@@ -18,7 +18,7 @@ const SvgLogo = styled.svg`
     height: 50px;
     width: 50px;
   }
-  @media ${device.mobileL} {
+  @media ${device.tabletM} {
     height: 40px;
     width: 40px;
     margin-top: 0.3em;
